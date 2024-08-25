@@ -50,15 +50,3 @@
   top: 10px;
   right: 15px;
 }
-
-/* Media Queries for iPhone and Other Mobile Devices */
-
-@media (max-width: 768px) {
-  .card {
-      width: 350px; /* More width on smaller screens */
-  }
-
-  .label, .value, .location, .distance {
-      font-size: 0.875rem; /* Slightly smaller font size on smaller screens */
-  }
-}

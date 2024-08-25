@@ -86,7 +86,10 @@ export default function App() {
       component: (
         <LocationAnalyzer
           featureData={schoolDistrictData.features}
-          fields={[{ key: 'S_DISTRICT', label: 'School District' }]}
+          fields={[
+            { key: 'SCHOOL', label: 'School District' },
+            { key: 'S_DISTRICT', label: 'School District' }
+            ]}
           featureType="School District"
         />
       ),
