@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/municipalwhere/static/css/main.bfb28282.css",
+    "main.css": "/municipalwhere/static/css/main.f576f0fd.css",
     "main.js": "/municipalwhere/static/js/main.476e31bf.js",
     "static/js/453.41dbe7c1.chunk.js": "/municipalwhere/static/js/453.41dbe7c1.chunk.js",
     "index.html": "/municipalwhere/index.html",
-    "main.bfb28282.css.map": "/municipalwhere/static/css/main.bfb28282.css.map",
+    "main.f576f0fd.css.map": "/municipalwhere/static/css/main.f576f0fd.css.map",
     "main.476e31bf.js.map": "/municipalwhere/static/js/main.476e31bf.js.map",
     "453.41dbe7c1.chunk.js.map": "/municipalwhere/static/js/453.41dbe7c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfb28282.css",
+    "static/css/main.f576f0fd.css",
     "static/js/main.476e31bf.js"
   ]
 }
