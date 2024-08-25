@@ -1,9 +1,9 @@
 /* CommonCardStyles.css */
 
 .card {
-  width: 90%; /* Relative width to the parent container */
+  width: 380px; /* Relative width to the parent container */
   max-width: 400px; /* Maximum width to ensure it doesn't get too large */
-  height: auto; /* Let height adjust based on content */
+  height: 75px; /* Let height adjust based on content */
   border: 1px solid #D0D0D0;
   border-radius: 4px;
   background-color: #FFFFFF;

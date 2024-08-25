@@ -165,7 +165,7 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#FAFAFA',
-    width: '100%',
+    width: '400px',
     margin: '0 auto',
   },
   header: {
@@ -187,7 +187,7 @@ const styles = {
     width: '100%',
     height: '1px',
     backgroundColor: '#E0E0E0',
-    margin: '10px 0',
+    //margin: '10px 0',
   },
   scrollViewContent: {
     display: 'flex',
