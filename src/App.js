@@ -184,7 +184,7 @@ const styles = {
     margin: '0 auto',
   },
   header: {
-    width: '100%',
+    width: '380px',
     //padding: '10px',
     backgroundColor: '#FAFAFA',
     display: 'flex',
@@ -199,7 +199,7 @@ const styles = {
     color: '#333',
   },
   divider: {
-    width: '100%',
+    width: '380px',
     height: '1px',
     backgroundColor: '#E0E0E0',
     //margin: '10px 0',

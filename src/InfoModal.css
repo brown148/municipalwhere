@@ -1,0 +1,73 @@
+/* InfoModal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #ffffff; /* White background */
+    padding: 1.5rem; /* Reduced padding to match common styles */
+    border-radius: 0.5rem; /* Consistent border radius */
+    width: 90vw; /* Responsive width */
+    max-width: 30rem; /* Maximum width */
+    text-align: center;
+  }
+  
+  .modal-title {
+    font-family: 'Times New Roman', serif; /* Consistent font family */
+    font-size: 1.25rem; /* Slightly smaller font size */
+    color: #333333; /* Dark grey for text */
+    margin-bottom: 1rem; /* Margin to separate title from content */
+  }
+  
+  .modal-value {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.25rem; /* Consistent font size with title */
+    color: #333333; /* Dark grey for text */
+    margin-bottom: 1.5rem; /* Margin to separate value from table */
+  }
+  
+  .table {
+    width: 100%;
+    margin: 1rem 0; /* Adjusted margin */
+  }
+  
+  .table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0; /* Consistent padding */
+  }
+  
+  .table-cell-label,
+  .table-cell-value {
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem; /* Standard font size */
+    color: #333333; /* Dark grey for text */
+    flex: 1;
+  }
+  
+  .table-cell-value {
+    text-align: right; /* Align value to the right */
+  }
+  
+  .close-button {
+    padding: 0.5rem 1rem; /* Consistent padding */
+    font-size: 1rem; /* Font size to match other buttons */
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333333; /* Dark grey text */
+    border: 1px solid #d0d0d0; /* Border to match other buttons */
+    border-radius: 0.25rem; /* Consistent border radius */
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #e0e0e0; /* Slightly darker grey for hover effect */
+  }
+  

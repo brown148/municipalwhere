@@ -1,4 +1,5 @@
 import React from 'react';
+import './InfoModal.css'; // Import the CSS file for styles
 
 function toProperCase(input) {
   return input
@@ -49,88 +50,3 @@ export default function InfoModal({ visible, onClose, fields, insideFeature }) {
     </div>
   );
 }
-
-// CSS styles equivalent to the React Native styles
-
-const styles = `
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 500px;
-  text-align: center;
-}
-
-.modal-title {
-  font-family: 'SF-Pro', sans-serif;
-  font-size: 1.5rem;
-  color: red;
-  margin-bottom: 10px;
-}
-
-.modal-value {
-  font-family: 'SF-Pro', sans-serif;
-  font-size: 1.5rem;
-  color: black;
-  margin-bottom: 20px;
-}
-
-.table {
-  width: 100%;
-  margin: 20px 0;
-}
-
-.table-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-}
-
-.table-cell-label {
-  font-family: 'SF-Pro', sans-serif;
-  font-size: 1rem;
-  color: black;
-  flex: 1;
-}
-
-.table-cell-value {
-  font-family: 'SF-Pro', sans-serif;
-  font-size: 1rem;
-  color: red;
-  flex: 1;
-  text-align: right;
-}
-
-.close-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.close-button:hover {
-  background-color: darkred;
-}
-`;
-
-// Add the styles to the page
-const styleSheet = document.createElement("style");
-styleSheet.type = "text/css";
-styleSheet.innerText = styles;
-document.head.appendChild(styleSheet);
