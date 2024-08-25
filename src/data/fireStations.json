@@ -1,0 +1,3841 @@
+{
+  "type" : "FeatureCollection", 
+  "features" : [
+{
+      "type" : "Feature", 
+      "id" : 1, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.907897372, 33.834263503
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 1, 
+        "PhoneNumber" : "714-991-8801", 
+        "SiteAddress" : "500 E BROADWAY", 
+        "City" : "Anaheim", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 1, 
+        "Agency" : "Anaheim", 
+        "Alias" : "ANA1", 
+        "Latitude" : 33.8342632874, 
+        "Longitude" : -117.9078971521, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 2, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.956710185, 33.840138325
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 2, 
+        "PhoneNumber" : "714-772-1744", 
+        "SiteAddress" : "2141 W CRESCENT AVE", 
+        "City" : "Anaheim", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 2, 
+        "Agency" : "Anaheim", 
+        "Alias" : "ANA2", 
+        "Latitude" : 33.8401381085, 
+        "Longitude" : -117.9567099585, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 3, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.910450339, 33.805587196
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 3, 
+        "PhoneNumber" : "714-772-1755", 
+        "SiteAddress" : "1717 S CLEMENTINE ST", 
+        "City" : "Anaheim", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 3, 
+        "Agency" : "Anaheim", 
+        "Alias" : "ANA3", 
+        "Latitude" : 33.8055869837, 
+        "Longitude" : -117.9104501181, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 4, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.981517157, 33.824631642
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 4, 
+        "PhoneNumber" : "714-828-9041", 
+        "SiteAddress" : "2736 W ORANGE AVE", 
+        "City" : "Anaheim", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 4, 
+        "Agency" : "Anaheim", 
+        "Alias" : "ANA4", 
+        "Latitude" : 33.8246314277, 
+        "Longitude" : -117.9815169272, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 5, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.87924754, 33.846911812
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 5, 
+        "PhoneNumber" : "714-630-1590", 
+        "SiteAddress" : "2540 E LA PALMA AVE", 
+        "City" : "Anaheim", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 5, 
+        "Agency" : "Anaheim", 
+        "Alias" : "ANA5", 
+        "Latitude" : 33.8469115942, 
+        "Longitude" : -117.8792473232, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 6, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.940965224, 33.814741359
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 6, 
+        "PhoneNumber" : "714-772-1764", 
+        "SiteAddress" : "1330 S EUCLID ST", 
+        "City" : "Anaheim", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 6, 
+        "Agency" : "Anaheim", 
+        "Alias" : "ANA6", 
+        "Latitude" : 33.8147411452, 
+        "Longitude" : -117.9409649993, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 7, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.885153665, 33.817810576
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 7, 
+        "PhoneNumber" : "714-772-1776", 
+        "SiteAddress" : "2222 E BALL RD", 
+        "City" : "Anaheim", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 7, 
+        "Agency" : "Anaheim", 
+        "Alias" : "ANA7", 
+        "Latitude" : 33.817810362, 
+        "Longitude" : -117.8851534482, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 8, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.818341746, 33.852058459
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 8, 
+        "PhoneNumber" : "714-637-3740", 
+        "SiteAddress" : "4555 E RIVERDALE AVE", 
+        "City" : "Anaheim", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 8, 
+        "Agency" : "Anaheim", 
+        "Alias" : "ANA8", 
+        "Latitude" : 33.8520582405, 
+        "Longitude" : -117.8183415378, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 9, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.772333156, 33.8406334100001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 9, 
+        "PhoneNumber" : "714-637-3710", 
+        "SiteAddress" : "6300 E NOHL RANCH RD", 
+        "City" : "Anaheim", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 9, 
+        "Agency" : "Anaheim", 
+        "Alias" : "ANA9", 
+        "Latitude" : 33.8406331931, 
+        "Longitude" : -117.7723329535, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 10, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.742265474, 33.8633031970001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 10, 
+        "PhoneNumber" : "714-998-7202", 
+        "SiteAddress" : "8270 E MONTE VISTA RD", 
+        "City" : "Anaheim", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 10, 
+        "Agency" : "Anaheim", 
+        "Alias" : "ANA10", 
+        "Latitude" : 33.8633029765, 
+        "Longitude" : -117.7422652761, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 12, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.997382861, 33.8243189830001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 12, 
+        "PhoneNumber" : "714-765-3190", 
+        "SiteAddress" : "3078 W ORANGE AVE", 
+        "City" : "Anaheim", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 11, 
+        "Agency" : "Anaheim", 
+        "Alias" : "ANA11", 
+        "Latitude" : 33.8243187688, 
+        "Longitude" : -117.9973826287, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 17, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.907024914, 33.927119906
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 17, 
+        "PhoneNumber" : "714-990-7660", 
+        "SiteAddress" : "555 N BERRY ST", 
+        "City" : "Brea", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 1, 
+        "Agency" : "Brea", 
+        "Alias" : "BRE1", 
+        "Latitude" : 33.9271196774, 
+        "Longitude" : -117.9070246931, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 18, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.89759744, 33.920953228
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 18, 
+        "PhoneNumber" : "714-990-7662", 
+        "SiteAddress" : "200 N BREA BLVD", 
+        "City" : "Brea", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 2, 
+        "Agency" : "Brea", 
+        "Alias" : "BRE2", 
+        "Latitude" : 33.9209530007, 
+        "Longitude" : -117.8975972213, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 19, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.863504437, 33.923518261
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 19, 
+        "PhoneNumber" : "714-671-4433", 
+        "SiteAddress" : "2600 E SANTA FE RD", 
+        "City" : "Brea", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 3, 
+        "Agency" : "Brea", 
+        "Alias" : "BRE3", 
+        "Latitude" : 33.9235180338, 
+        "Longitude" : -117.8635042226, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 20, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.803140699, 33.9280671110001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 20, 
+        "PhoneNumber" : "714-990-7664", 
+        "SiteAddress" : "198 OLINDA PL", 
+        "City" : "Brea", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 4, 
+        "Agency" : "Brea", 
+        "Alias" : "BRE4", 
+        "Latitude" : 33.9280668822, 
+        "Longitude" : -117.8031404923, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 22, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.922267037, 33.673773456
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 22, 
+        "PhoneNumber" : "714-327-7410", 
+        "SiteAddress" : "2803 ROYAL PALM DR", 
+        "City" : "Costa Mesa", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 1, 
+        "Agency" : "Costa Mesa", 
+        "Alias" : "COS1", 
+        "Latitude" : 33.673773261, 
+        "Longitude" : -117.9222668153, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 23, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.889880697, 33.680417549
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 23, 
+        "PhoneNumber" : "714-327-7420", 
+        "SiteAddress" : "800 BAKER ST", 
+        "City" : "Costa Mesa", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 2, 
+        "Agency" : "Costa Mesa", 
+        "Alias" : "COS2", 
+        "Latitude" : 33.680417353, 
+        "Longitude" : -117.8898804796, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 24, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.921490038, 33.642283808
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 24, 
+        "PhoneNumber" : "714-327-7430", 
+        "SiteAddress" : "1865 PARK AVE", 
+        "City" : "Costa Mesa", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 3, 
+        "Agency" : "Costa Mesa", 
+        "Alias" : "COS3", 
+        "Latitude" : 33.6422836168, 
+        "Longitude" : -117.9214898159, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 25, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.931848038, 33.658217746
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 25, 
+        "PhoneNumber" : "714-327-7440", 
+        "SiteAddress" : "2300 PLACENTIA AVE", 
+        "City" : "Costa Mesa", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 4, 
+        "Agency" : "Costa Mesa", 
+        "Alias" : "COS4", 
+        "Latitude" : 33.658217553, 
+        "Longitude" : -117.9318478146, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 26, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.904494324, 33.662420619
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 26, 
+        "PhoneNumber" : "714-754-5005", 
+        "SiteAddress" : "2450 VANGUARD WAY", 
+        "City" : "Costa Mesa", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 5, 
+        "Agency" : "Costa Mesa", 
+        "Alias" : "COS5", 
+        "Latitude" : 33.6624204251, 
+        "Longitude" : -117.9044941043, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 27, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.8770083, 33.691980588
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 27, 
+        "PhoneNumber" : "714-327-7460", 
+        "SiteAddress" : "3350 SAKIOKA DR", 
+        "City" : "Costa Mesa", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 6, 
+        "Agency" : "Costa Mesa", 
+        "Alias" : "COS6", 
+        "Latitude" : 33.69198039, 
+        "Longitude" : -117.8770080845, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 33, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.91918367, 33.870077215
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 33, 
+        "PhoneNumber" : "714-738-6513", 
+        "SiteAddress" : "312 E COMMONWEALTH AVE", 
+        "City" : "Fullerton", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 1, 
+        "Agency" : "Fullerton", 
+        "Alias" : "FUL01", 
+        "Latitude" : 33.8700769944, 
+        "Longitude" : -117.9191834482, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 34, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.959034129, 33.866296048
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 34, 
+        "PhoneNumber" : "714-738-6515", 
+        "SiteAddress" : "1732 W VALENCIA DR", 
+        "City" : "Fullerton", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 2, 
+        "Agency" : "Fullerton", 
+        "Alias" : "FUL02", 
+        "Latitude" : 33.8662958283, 
+        "Longitude" : -117.9590339021, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 35, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.897762696, 33.8644373540001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 35, 
+        "PhoneNumber" : "714-738-6516", 
+        "SiteAddress" : "700 S ACACIA AVE", 
+        "City" : "Fullerton", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 3, 
+        "Agency" : "Fullerton", 
+        "Alias" : "FUL03", 
+        "Latitude" : 33.8644371342, 
+        "Longitude" : -117.8977624772, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 36, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.931057967, 33.908693983
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 36, 
+        "PhoneNumber" : "714-378-6517", 
+        "SiteAddress" : "3251 N HARBOR BLVD", 
+        "City" : "Fullerton", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 4, 
+        "Agency" : "Fullerton", 
+        "Alias" : "FUL04", 
+        "Latitude" : 33.9086937572, 
+        "Longitude" : -117.9310577431, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 37, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.887027997, 33.88916282
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 37, 
+        "PhoneNumber" : "714-738-6518", 
+        "SiteAddress" : "2555 YORBA LINDA BLVD", 
+        "City" : "Fullerton", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 5, 
+        "Agency" : "Fullerton", 
+        "Alias" : "FUL05", 
+        "Latitude" : 33.8891625969, 
+        "Longitude" : -117.8870277791, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 38, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.972376331, 33.896171656
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 38, 
+        "PhoneNumber" : "714-738-6519", 
+        "SiteAddress" : "2691 ROSECRANS AVE", 
+        "City" : "Fullerton", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 6, 
+        "Agency" : "Fullerton", 
+        "Alias" : "FUL06", 
+        "Latitude" : 33.8961714318, 
+        "Longitude" : -117.9723761022, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 39, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.963351069, 33.7052794360001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 39, 
+        "PhoneNumber" : "714-593-4491", 
+        "SiteAddress" : "17737 BUSHARD ST", 
+        "City" : "Fountain Valley", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 1, 
+        "Agency" : "Fountain Valley", 
+        "Alias" : "FVY1", 
+        "Latitude" : 33.7052792366, 
+        "Longitude" : -117.9633508416, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 40, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.928767356, 33.7198511600001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 40, 
+        "PhoneNumber" : "714-593-4492", 
+        "SiteAddress" : "16767 NEWHOPE ST", 
+        "City" : "Fountain Valley", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 2, 
+        "Agency" : "Fountain Valley", 
+        "Alias" : "FVY2", 
+        "Latitude" : 33.719850959, 
+        "Longitude" : -117.9287671336, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 48, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.971442928, 33.651392179
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 48, 
+        "PhoneNumber" : "714-536-5475", 
+        "SiteAddress" : "21441 MAGNOLIA ST", 
+        "City" : "Huntington Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 4, 
+        "Agency" : "Huntington Beach", 
+        "Alias" : "HTB4", 
+        "Latitude" : 33.651391987, 
+        "Longitude" : -117.9714427, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 49, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.997452755, 33.6621800200001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 49, 
+        "PhoneNumber" : "714-536-5474", 
+        "SiteAddress" : "530 LAKE ST", 
+        "City" : "Huntington Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 5, 
+        "Agency" : "Huntington Beach", 
+        "Alias" : "HTB5", 
+        "Latitude" : 33.6621798261, 
+        "Longitude" : -117.9974525237, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 50, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.061500654, 33.712052187
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 50, 
+        "PhoneNumber" : "714-536-5928", 
+        "SiteAddress" : "3821 WARNER AVE", 
+        "City" : "Huntington Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 7, 
+        "Agency" : "Huntington Beach", 
+        "Alias" : "HTB7", 
+        "Latitude" : 33.7120519867, 
+        "Longitude" : -118.0615004131, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 51, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.025641235, 33.7229618470001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 51, 
+        "PhoneNumber" : "714-536-5464", 
+        "SiteAddress" : "5891 HEIL AVE", 
+        "City" : "Huntington Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 8, 
+        "Agency" : "Huntington Beach", 
+        "Alias" : "HTB8", 
+        "Latitude" : 33.7229616455, 
+        "Longitude" : -118.025640999, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 52, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.000206272, 33.6959398820001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 52, 
+        "PhoneNumber" : "714-536-5471", 
+        "SiteAddress" : "18311 GOTHARD ST", 
+        "City" : "Huntington Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 1, 
+        "Agency" : "Huntington Beach", 
+        "Alias" : "HTB1", 
+        "Latitude" : 33.6959396843, 
+        "Longitude" : -118.0002060394, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 53, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.000563864, 33.726765594
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 53, 
+        "PhoneNumber" : "714-536-5417", 
+        "SiteAddress" : "16221 GOTHARD ST", 
+        "City" : "Huntington Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 2, 
+        "Agency" : "Huntington Beach", 
+        "Alias" : "HTB2", 
+        "Latitude" : 33.7267653923, 
+        "Longitude" : -118.0005636315, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 54, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.962888772, 33.676428945
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 54, 
+        "PhoneNumber" : "714-536-5472", 
+        "SiteAddress" : "19711 BUSHARD ST", 
+        "City" : "Huntington Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 3, 
+        "Agency" : "Huntington Beach", 
+        "Alias" : "HTB3", 
+        "Latitude" : 33.6764287497, 
+        "Longitude" : -117.9628885443, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 55, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.015301416, 33.6924270370001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 55, 
+        "PhoneNumber" : "714-375-8400", 
+        "SiteAddress" : "18591 EDWARDS ST", 
+        "City" : "Huntington Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 6, 
+        "Agency" : "Huntington Beach", 
+        "Alias" : "HTB6", 
+        "Latitude" : 33.6924268392, 
+        "Longitude" : -118.0153011822, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 69, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.781168065, 33.545191668
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 69, 
+        "PhoneNumber" : "949-497-0785", 
+        "SiteAddress" : "501 FOREST AVE", 
+        "City" : "Laguna Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 1, 
+        "Agency" : "Laguna Beach", 
+        "Alias" : "LAB1", 
+        "Latitude" : 33.5451914897, 
+        "Longitude" : -117.7811678626, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 70, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.771208413, 33.5298576100001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 70, 
+        "PhoneNumber" : "949-494-3480", 
+        "SiteAddress" : "285 AGATE ST", 
+        "City" : "Laguna Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 2, 
+        "Agency" : "Laguna Beach", 
+        "Alias" : "LAB2", 
+        "Latitude" : 33.5298574333, 
+        "Longitude" : -117.7712082113, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 71, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.753382789, 33.5453254500001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 71, 
+        "PhoneNumber" : "949-494-5869", 
+        "SiteAddress" : "2900 ALTA LAGUNA BLVD", 
+        "City" : "Laguna Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 3, 
+        "Agency" : "Laguna Beach", 
+        "Alias" : "LAB3", 
+        "Latitude" : 33.5453252719, 
+        "Longitude" : -117.75338259, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 72, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.743942657, 33.5030464050001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 72, 
+        "PhoneNumber" : "494-499-4697", 
+        "SiteAddress" : "31646 2ND AVE", 
+        "City" : "Laguna Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 4, 
+        "Agency" : "Laguna Beach", 
+        "Alias" : "LAB4", 
+        "Latitude" : 33.5030462315, 
+        "Longitude" : -117.743942459, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 73, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.976811591, 33.9091404980001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 73, 
+        "PhoneNumber" : "562-697-4320", 
+        "SiteAddress" : "13540 BEACH BLVD", 
+        "City" : "Los Angeles County", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Los Angeles County", 
+        "StationNumber" : 194, 
+        "Agency" : "Los Angeles County", 
+        "Alias" : "LAC194", 
+        "Latitude" : 33.9091402727, 
+        "Longitude" : -117.9768113611, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 81, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.955751589, 33.931633246
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 81, 
+        "PhoneNumber" : "562-694-8977", 
+        "SiteAddress" : "850 W LA HABRA BLVD", 
+        "City" : "La Habra", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 191, 
+        "Agency" : "La Habra", 
+        "Alias" : "LAC191", 
+        "Latitude" : 33.9316330173, 
+        "Longitude" : -117.9557513624, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 82, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.932564024, 33.927014027
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 82, 
+        "PhoneNumber" : "562-697-9037", 
+        "SiteAddress" : "520 S HARBOR BLVD", 
+        "City" : "La Habra", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 192, 
+        "Agency" : "La Habra", 
+        "Alias" : "LAC192", 
+        "Latitude" : 33.9270137993, 
+        "Longitude" : -117.9325638003, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 83, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.957408841, 33.907392063
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 83, 
+        "PhoneNumber" : "714-446-7400", 
+        "SiteAddress" : "1000 W RISNER WAY", 
+        "City" : "La Habra", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 193, 
+        "Agency" : "La Habra", 
+        "Alias" : "LAC193", 
+        "Latitude" : 33.907391838, 
+        "Longitude" : -117.957408614, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 93, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.906046431, 33.6041814750001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 93, 
+        "PhoneNumber" : "949-644-3371", 
+        "SiteAddress" : "110 E BALBOA BLVD", 
+        "City" : "Newport Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 1, 
+        "Agency" : "Newport Beach", 
+        "Alias" : "NPB1", 
+        "Latitude" : 33.6041812894, 
+        "Longitude" : -117.9060462112, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 94, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.828812318, 33.6062575930001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 94, 
+        "PhoneNumber" : "949-644-3378", 
+        "SiteAddress" : "6502 RIDGE PARK RD", 
+        "City" : "Newport Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 8, 
+        "Agency" : "Newport Beach", 
+        "Alias" : "NPB8", 
+        "Latitude" : 33.6062574062, 
+        "Longitude" : -117.8288121087, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 95, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.928424345, 33.616263044
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 95, 
+        "PhoneNumber" : "949-644-3372", 
+        "SiteAddress" : "475 32ND ST", 
+        "City" : "Newport Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 2, 
+        "Agency" : "Newport Beach", 
+        "Alias" : "NPB2", 
+        "Latitude" : 33.6162628566, 
+        "Longitude" : -117.9284241223, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 96, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.8800061, 33.6225522660001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 96, 
+        "PhoneNumber" : "949-644-3373", 
+        "SiteAddress" : "868 SANTA BARBARA DR", 
+        "City" : "Newport Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 3, 
+        "Agency" : "Newport Beach", 
+        "Alias" : "NPB3", 
+        "Latitude" : 33.6225520776, 
+        "Longitude" : -117.8800058837, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 97, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.889580298, 33.6055498310001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 97, 
+        "PhoneNumber" : "949-644-3374", 
+        "SiteAddress" : "124 MARINE AVE", 
+        "City" : "Newport Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 4, 
+        "Agency" : "Newport Beach", 
+        "Alias" : "NPB4", 
+        "Latitude" : 33.6055496443, 
+        "Longitude" : -117.8895800804, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 98, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.869567796, 33.595975869
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 98, 
+        "PhoneNumber" : "949-644-3375", 
+        "SiteAddress" : "410 MARIGOLD AVE", 
+        "City" : "Newport Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 5, 
+        "Agency" : "Newport Beach", 
+        "Alias" : "NPB5", 
+        "Latitude" : 33.595975684, 
+        "Longitude" : -117.8695675812, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 99, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.903122171, 33.633521902
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 99, 
+        "PhoneNumber" : "949-644-3376", 
+        "SiteAddress" : "1348 IRVINE AVE", 
+        "City" : "Newport Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 6, 
+        "Agency" : "Newport Beach", 
+        "Alias" : "NPB6", 
+        "Latitude" : 33.633521712, 
+        "Longitude" : -117.9031219516, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 100, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.880543704, 33.657331254
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 100, 
+        "PhoneNumber" : "949-644-3377", 
+        "SiteAddress" : "20401 SW ACACIA ST", 
+        "City" : "Newport Beach", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 7, 
+        "Agency" : "Newport Beach", 
+        "Alias" : "NPB7", 
+        "Latitude" : 33.6573310612, 
+        "Longitude" : -117.8805434878, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 103, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.840892304, 33.787575769
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 103, 
+        "PhoneNumber" : "714-288-2511", 
+        "SiteAddress" : "1176 E CHAPMAN AVE", 
+        "City" : "Orange", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 1, 
+        "Agency" : "Orange", 
+        "Alias" : "ORG1", 
+        "Latitude" : 33.7875755593, 
+        "Longitude" : -117.8408920922, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 104, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.822409839, 33.8020059940001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 104, 
+        "PhoneNumber" : "714-288-2512", 
+        "SiteAddress" : "2900 E COLLINS AVE", 
+        "City" : "Orange", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 2, 
+        "Agency" : "Orange", 
+        "Alias" : "ORG2", 
+        "Latitude" : 33.8020057816, 
+        "Longitude" : -117.8224096299, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 105, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.849264396, 33.8195273690001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 105, 
+        "PhoneNumber" : "714-288-2513", 
+        "SiteAddress" : "1910 N SHAFFER ST", 
+        "City" : "Orange", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 3, 
+        "Agency" : "Orange", 
+        "Alias" : "ORG3", 
+        "Latitude" : 33.8195271546, 
+        "Longitude" : -117.8492641839, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 106, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.809370866, 33.7861570690001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 106, 
+        "PhoneNumber" : "714-288-2514", 
+        "SiteAddress" : "201 S ESPLANADE ST", 
+        "City" : "Orange", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 4, 
+        "Agency" : "Orange", 
+        "Alias" : "ORG4", 
+        "Latitude" : 33.7861568592, 
+        "Longitude" : -117.8093706585, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 107, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.866877551, 33.789963491
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 107, 
+        "PhoneNumber" : "714-288-2515", 
+        "SiteAddress" : "1345 W MAPLE AVE", 
+        "City" : "Orange", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 5, 
+        "Agency" : "Orange", 
+        "Alias" : "ORG5", 
+        "Latitude" : 33.7899632807, 
+        "Longitude" : -117.8668773357, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 108, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.890189424, 33.7845446040001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 108, 
+        "PhoneNumber" : "714-288-2516", 
+        "SiteAddress" : "345 THE CITY DR", 
+        "City" : "Orange", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 6, 
+        "Agency" : "Orange", 
+        "Alias" : "ORG6", 
+        "Latitude" : 33.7845443941, 
+        "Longitude" : -117.8901892057, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 109, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.76251761, 33.789936402
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 109, 
+        "PhoneNumber" : "714-288-2517", 
+        "SiteAddress" : "8501 E FORT RD", 
+        "City" : "Orange", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 7, 
+        "Agency" : "Orange", 
+        "Alias" : "ORG7", 
+        "Latitude" : 33.7899361912, 
+        "Longitude" : -117.7625174095, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 110, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.792069941, 33.827199498
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 110, 
+        "PhoneNumber" : "714-288-2518", 
+        "SiteAddress" : "5725 E CARVER LN", 
+        "City" : "Orange", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 8, 
+        "Agency" : "Orange", 
+        "Alias" : "ORG8", 
+        "Latitude" : 33.8271992825, 
+        "Longitude" : -117.7920697358, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 111, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.870428414, 33.871378646
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 111, 
+        "PhoneNumber" : "714-996-1490", 
+        "SiteAddress" : "110 S BRADFORD AVE", 
+        "City" : "Placentia", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 1, 
+        "Agency" : "Placentia", 
+        "Alias" : "PLA1", 
+        "Latitude" : 33.871378425, 
+        "Longitude" : -117.8704281981, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 112, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.85449761, 33.8903334550001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 112, 
+        "PhoneNumber" : "714-996-2121", 
+        "SiteAddress" : "1530 VALENCIA AVE", 
+        "City" : "Placentia", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "N", 
+        "County" : "Orange County", 
+        "StationNumber" : 2, 
+        "Agency" : "Placentia", 
+        "Alias" : "PLA2", 
+        "Latitude" : 33.8903332312, 
+        "Longitude" : -117.8544973963, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    },    
+{
+      "type" : "Feature", 
+      "id" : 13, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.725888568, 33.5702084910001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 13, 
+        "PhoneNumber" : "949-362-9237", 
+        "SiteAddress" : "57 JOURNEY", 
+        "City" : "Aliso Viejo", 
+        "Battalion" : "4", 
+        "Division" : "5", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 57, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC57", 
+        "Latitude" : 33.5702083088, 
+        "Longitude" : -117.725888372, 
+        "DivisionHQ" : "Y", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 14, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.00406614, 33.846213737
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 14, 
+        "PhoneNumber" : "714-527-4118", 
+        "SiteAddress" : "7440 LA PALMA AVE", 
+        "City" : "Buena Park", 
+        "Battalion" : "8", 
+        "Division" : "7", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 61, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC61", 
+        "Latitude" : 33.8462135196, 
+        "Longitude" : -118.0040659064, 
+        "DivisionHQ" : "Y", 
+        "BattalionHQ" : "Y"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 15, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.99742789, 33.8731782350001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 15, 
+        "PhoneNumber" : "714-521-0824", 
+        "SiteAddress" : "7780 ARTESIA BLVD", 
+        "City" : "Buena Park", 
+        "Battalion" : "8", 
+        "Division" : "7", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 62, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC62", 
+        "Latitude" : 33.8731780137, 
+        "Longitude" : -117.9974276579, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 16, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.019257286, 33.829937301
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 16, 
+        "PhoneNumber" : "714-229-4826", 
+        "SiteAddress" : "9120 HOLDER ST", 
+        "City" : "Buena Park", 
+        "Battalion" : "8", 
+        "Division" : "7", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 63, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC63", 
+        "Latitude" : 33.8299370854, 
+        "Longitude" : -118.0192570509, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 21, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.579763062, 33.5987966230001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 21, 
+        "PhoneNumber" : "949-459-7410", 
+        "SiteAddress" : "25082 VISTA DEL VERDE", 
+        "City" : "Coto De Caza", 
+        "Battalion" : "7", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 40, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC40", 
+        "Latitude" : 33.5987964375, 
+        "Longitude" : -117.5797628861, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 28, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.046140133, 33.810622616
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 28, 
+        "PhoneNumber" : "714-821-3840", 
+        "SiteAddress" : "4991 CERRITOS AVE", 
+        "City" : "Cypress", 
+        "Battalion" : "8", 
+        "Division" : "7", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 17, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC17", 
+        "Latitude" : 33.8106224031, 
+        "Longitude" : -118.046139894, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 29, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.674445666, 33.465075649
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 29, 
+        "PhoneNumber" : "949-496-9354", 
+        "SiteAddress" : "26111 VICTORIA BLVD", 
+        "City" : "Dana Point", 
+        "Battalion" : "6", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 29, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC29", 
+        "Latitude" : 33.465075481, 
+        "Longitude" : -117.674445477, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "Y"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 30, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.714268462, 33.4798207420001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 30, 
+        "PhoneNumber" : "949-661-0203", 
+        "SiteAddress" : "23831 STONEHILL DR", 
+        "City" : "Dana Point", 
+        "Battalion" : "6", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 30, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC30", 
+        "Latitude" : 33.4798205714, 
+        "Longitude" : -117.7142682681, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 41, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.936032311, 33.776356809
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 41, 
+        "PhoneNumber" : "714-741-5601", 
+        "SiteAddress" : "11261 ACACIA PKWY", 
+        "City" : "Garden Grove", 
+        "Battalion" : "11", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 81, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC81", 
+        "Latitude" : 33.7763566005, 
+        "Longitude" : -117.9360320873, 
+        "DivisionHQ" : "Y", 
+        "BattalionHQ" : "Y"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 42, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.967824457, 33.791133925
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 42, 
+        "PhoneNumber" : "714-741-5602", 
+        "SiteAddress" : "11805 GILBERT ST", 
+        "City" : "Garden Grove", 
+        "Battalion" : "11", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 82, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC82", 
+        "Latitude" : 33.7911337152, 
+        "Longitude" : -117.9678242288, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 43, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.917814277, 33.766766922
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 43, 
+        "PhoneNumber" : "714-741-5603", 
+        "SiteAddress" : "12132 TRASK AVE", 
+        "City" : "Garden Grove", 
+        "Battalion" : "11", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 83, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC83", 
+        "Latitude" : 33.7667667145, 
+        "Longitude" : -117.9178140556, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 44, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.028972063, 33.7855493710001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 44, 
+        "PhoneNumber" : "714-741-5604", 
+        "SiteAddress" : "12191 VALLEY VIEW ST", 
+        "City" : "Garden Grove", 
+        "Battalion" : "11", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 84, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC84", 
+        "Latitude" : 33.7855491619, 
+        "Longitude" : -118.0289718263, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 45, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.001774275, 33.777229904
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 45, 
+        "PhoneNumber" : "714-741-5605", 
+        "SiteAddress" : "12751 WESTERN AVE", 
+        "City" : "Garden Grove", 
+        "Battalion" : "11", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 85, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC85", 
+        "Latitude" : 33.7772296952, 
+        "Longitude" : -118.0017740428, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 46, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.92313349, 33.783733322
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 46, 
+        "PhoneNumber" : "714-741-5606", 
+        "SiteAddress" : "12232 WEST ST", 
+        "City" : "Garden Grove", 
+        "Battalion" : "11", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 86, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC86", 
+        "Latitude" : 33.7837331125, 
+        "Longitude" : -117.9231332679, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 47, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.955778912, 33.757152073
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 47, 
+        "PhoneNumber" : "714-741-5607", 
+        "SiteAddress" : "14162 FORSYTH LN", 
+        "City" : "Garden Grove", 
+        "Battalion" : "11", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 80, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC80", 
+        "Latitude" : 33.7571518675, 
+        "Longitude" : -117.9557786854, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 56, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.8298565, 33.649698734
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 56, 
+        "PhoneNumber" : "949-854-7544", 
+        "SiteAddress" : "2 CALIFORNIA AVE", 
+        "City" : "Irvine", 
+        "Battalion" : "5", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 4, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC04", 
+        "Latitude" : 33.6496985415, 
+        "Longitude" : -117.8298562906, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 57, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.821828153, 33.6901532460001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 57, 
+        "PhoneNumber" : "949-559-7530", 
+        "SiteAddress" : "3180 BARRANCA PKWY", 
+        "City" : "Irvine", 
+        "Battalion" : "5", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 6, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC06", 
+        "Latitude" : 33.690153049, 
+        "Longitude" : -117.8218279444, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "Y"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 58, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.747118656, 33.6756735860001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 58, 
+        "PhoneNumber" : "949-451-0020", 
+        "SiteAddress" : "450 CORSAIR", 
+        "City" : "Irvine", 
+        "Battalion" : "10", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 20, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC20", 
+        "Latitude" : 33.6756733901, 
+        "Longitude" : -117.7471184577, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "Y"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 59, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.788365193, 33.673558176
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 59, 
+        "PhoneNumber" : "949-551-6881", 
+        "SiteAddress" : "301 E YALE LOOP", 
+        "City" : "Irvine", 
+        "Battalion" : "5", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 36, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC36", 
+        "Latitude" : 33.6735579812, 
+        "Longitude" : -117.7883649887, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 60, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.705916898, 33.656689059
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 60, 
+        "PhoneNumber" : "949-859-6926", 
+        "SiteAddress" : "26 PARKER", 
+        "City" : "Irvine", 
+        "Battalion" : "10", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 38, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC38", 
+        "Latitude" : 33.6566888662, 
+        "Longitude" : -117.7059167049, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 61, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.778359675, 33.6987441370001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 61, 
+        "PhoneNumber" : "949-559-0201", 
+        "SiteAddress" : "4691 WALNUT AVE", 
+        "City" : "Irvine", 
+        "Battalion" : "10", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 26, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC26", 
+        "Latitude" : 33.6987439383, 
+        "Longitude" : -117.7783594721, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 62, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.849306348, 33.686222957
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 62, 
+        "PhoneNumber" : "949-660-0427", 
+        "SiteAddress" : "17862 GILLETTE AVE", 
+        "City" : "Irvine", 
+        "Battalion" : "5", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 28, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC28", 
+        "Latitude" : 33.6862227597, 
+        "Longitude" : -117.8493061362, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 63, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.738415798, 33.6406608560001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 63, 
+        "PhoneNumber" : "949-341-0051", 
+        "SiteAddress" : "18 CUSHING", 
+        "City" : "Irvine", 
+        "Battalion" : "10", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 51, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC51", 
+        "Latitude" : 33.6406606649, 
+        "Longitude" : -117.7384156004, 
+        "DivisionHQ" : "Y", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 64, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.782360794, 33.654955171
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 64, 
+        "PhoneNumber" : "949-854-4747", 
+        "SiteAddress" : "47 FOSSIL", 
+        "City" : "Irvine", 
+        "Battalion" : "5", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 47, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC47", 
+        "Latitude" : 33.654954978, 
+        "Longitude" : -117.7823605906, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 65, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.712246978, 33.6926792630001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 65, 
+        "PhoneNumber" : "949-653-2727", 
+        "SiteAddress" : "12400 PORTOLA SPGS", 
+        "City" : "Irvine", 
+        "Battalion" : "10", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 27, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC27", 
+        "Latitude" : 33.6926790648, 
+        "Longitude" : -117.7122467845, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 66, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.746116942, 33.7258486440001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 66, 
+        "PhoneNumber" : "714-508-0055", 
+        "SiteAddress" : "4955 PORTOLA PKWY", 
+        "City" : "Irvine", 
+        "Battalion" : "10", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 55, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC55", 
+        "Latitude" : 33.7258484416, 
+        "Longitude" : -117.7461167431, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 68, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.869316986, 33.6786496060001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 68, 
+        "PhoneNumber" : "949-852-3200", 
+        "SiteAddress" : "374 PAULARINO AVE", 
+        "City" : "John Wayne Airport", 
+        "Battalion" : "5", 
+        "Division" : "2", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 33, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC33", 
+        "Latitude" : 33.6786494102, 
+        "Longitude" : -117.8693167715, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 74, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.069506056, 33.801651582
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 74, 
+        "PhoneNumber" : "562-431-6026", 
+        "SiteAddress" : "3642 GREEN AVE", 
+        "City" : "Los Alamitos", 
+        "Battalion" : "1", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 2, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC02", 
+        "Latitude" : 33.8016513702, 
+        "Longitude" : -118.0695058144, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 75, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.036653303, 33.849214814
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 75, 
+        "PhoneNumber" : "714-523-8031", 
+        "SiteAddress" : "7822 WALKER ST", 
+        "City" : "La Palma", 
+        "Battalion" : "8", 
+        "Division" : "7", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 13, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC13", 
+        "Latitude" : 33.8492145963, 
+        "Longitude" : -118.0366530659, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 76, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.628516172, 33.5670234360001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 76, 
+        "PhoneNumber" : "949-347-2258", 
+        "SiteAddress" : "58 STATION WAY", 
+        "City" : "Ladera Ranch", 
+        "Battalion" : "7", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 58, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC58", 
+        "Latitude" : 33.5670232542, 
+        "Longitude" : -117.6285159898, 
+        "DivisionHQ" : "Y", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 77, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.718199649, 33.5255505270001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 77, 
+        "PhoneNumber" : "949-249-3085", 
+        "SiteAddress" : "23600 PACIFIC ISLAND DR", 
+        "City" : "Laguna Niguel", 
+        "Battalion" : "4", 
+        "Division" : "5", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 5, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC05", 
+        "Latitude" : 33.5255503506, 
+        "Longitude" : -117.7181994542, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 78, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.706663535, 33.5636769650001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 78, 
+        "PhoneNumber" : "949-831-3232", 
+        "SiteAddress" : "24241 AVILA RD", 
+        "City" : "Laguna Niguel", 
+        "Battalion" : "4", 
+        "Division" : "5", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 39, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC39", 
+        "Latitude" : 33.5636767837, 
+        "Longitude" : -117.7066633417, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 79, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.687645021, 33.506244769
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 79, 
+        "PhoneNumber" : "949-249-9681", 
+        "SiteAddress" : "31461 GOLDEN LANTERN", 
+        "City" : "Laguna Niguel", 
+        "Battalion" : "4", 
+        "Division" : "5", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 49, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC49", 
+        "Latitude" : 33.506244595, 
+        "Longitude" : -117.6876448312, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 80, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.712755792, 33.6140893890001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 80, 
+        "PhoneNumber" : "949-837-5471", 
+        "SiteAddress" : "24001 PASEO DE VALENCIA", 
+        "City" : "Laguna Woods", 
+        "Battalion" : "4", 
+        "Division" : "5", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 22, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC22", 
+        "Latitude" : 33.6140892017, 
+        "Longitude" : -117.7127555984, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "Y"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 84, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.691057521, 33.627628088
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 84, 
+        "PhoneNumber" : "949-837-0911", 
+        "SiteAddress" : "23022 EL TORO RD", 
+        "City" : "Lake Forest", 
+        "Battalion" : "4", 
+        "Division" : "5", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 19, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC19", 
+        "Latitude" : 33.6276278989, 
+        "Longitude" : -117.6910573303, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 85, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.623944184, 33.6836192390001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 85, 
+        "PhoneNumber" : "949-589-0323", 
+        "SiteAddress" : "19150 RIDGELINE RD", 
+        "City" : "Lake Forest", 
+        "Battalion" : "4", 
+        "Division" : "5", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 42, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC42", 
+        "Latitude" : 33.6836190423, 
+        "Longitude" : -117.6239440021, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 86, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.654458221, 33.6746936710001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 86, 
+        "PhoneNumber" : "949-581-4406", 
+        "SiteAddress" : "19811 PAULING", 
+        "City" : "Lake Forest", 
+        "Battalion" : "4", 
+        "Division" : "5", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 54, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC54", 
+        "Latitude" : 33.6746934754, 
+        "Longitude" : -117.6544580351, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 88, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.986754881, 33.744996112
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 88, 
+        "PhoneNumber" : "714-893-8723", 
+        "SiteAddress" : "8171 BOLSA AVE", 
+        "City" : "Midway City (Unincorporated)", 
+        "Battalion" : "1", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 25, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC25", 
+        "Latitude" : 33.7449959077, 
+        "Longitude" : -117.986754651, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 90, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.670872445, 33.5556486200001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 90, 
+        "PhoneNumber" : "949-582-9260", 
+        "SiteAddress" : "9 THE SHOPS AT MISSION VIEJO", 
+        "City" : "Mission Viejo", 
+        "Battalion" : "7", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 9, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC09", 
+        "Latitude" : 33.5556484397, 
+        "Longitude" : -117.6708722562, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 91, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.660154733, 33.586902127
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 91, 
+        "PhoneNumber" : "949-837-9333", 
+        "SiteAddress" : "25862 MARGUERITE PKWY", 
+        "City" : "Mission Viejo", 
+        "Battalion" : "7", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 24, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC24", 
+        "Latitude" : 33.5869019429, 
+        "Longitude" : -117.6601545459, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 92, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.637350947, 33.636646711
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 92, 
+        "PhoneNumber" : "949-581-1910", 
+        "SiteAddress" : "22426 OLYMPIAD RD", 
+        "City" : "Mission Viejo", 
+        "Battalion" : "7", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 31, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC31", 
+        "Latitude" : 33.6366465201, 
+        "Longitude" : -117.6373507633, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 102, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.798946731, 33.809648957
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 102, 
+        "PhoneNumber" : "714-997-2552", 
+        "SiteAddress" : "5020 E SANTIAGO CANYON RD", 
+        "City" : "Orange", 
+        "Battalion" : null, 
+        "Division" : null, 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 23, 
+        "Agency" : "Orange", 
+        "Alias" : "ORC23", 
+        "Latitude" : 33.8096487442, 
+        "Longitude" : -117.7989465255, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 113, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.618341791, 33.528644335
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 113, 
+        "PhoneNumber" : "949-489-4309", 
+        "SiteAddress" : "56 SENDERO WAY", 
+        "City" : "Rancho Mission Viejo", 
+        "Battalion" : "6", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 56, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC56", 
+        "Latitude" : 33.5286441588, 
+        "Longitude" : -117.6183416096, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 115, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.581466376, 33.520550582
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 115, 
+        "PhoneNumber" : "949-488-7055", 
+        "SiteAddress" : "31544 COW CAMP RD", 
+        "City" : "Rancho Mission Viejo", 
+        "Battalion" : "6", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 67, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC67", 
+        "Latitude" : 33.5205504067, 
+        "Longitude" : -117.5814661992, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 116, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.604409667, 33.6367912960001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 116, 
+        "PhoneNumber" : "949-858-8801", 
+        "SiteAddress" : "30131 AVENTURA", 
+        "City" : "Rancho Santa Margarita", 
+        "Battalion" : "7", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 45, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC45", 
+        "Latitude" : 33.6367911056, 
+        "Longitude" : -117.6044094869, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "Y"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 117, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.646713991, 33.4565213820001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 117, 
+        "PhoneNumber" : "949-361-9670", 
+        "SiteAddress" : "670 CAMINO DE LOS MARES", 
+        "City" : "San Clemente", 
+        "Battalion" : "6", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 50, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC50", 
+        "Latitude" : 33.4565212145, 
+        "Longitude" : -117.6467138065, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 118, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.604154102, 33.462354259
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 118, 
+        "PhoneNumber" : "949-492-8704", 
+        "SiteAddress" : "59 AVENIDA LA PATA", 
+        "City" : "San Clemente", 
+        "Battalion" : "6", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 59, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC59", 
+        "Latitude" : 33.4623540906, 
+        "Longitude" : -117.6041539226, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 119, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.612243618, 33.4255788880001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 119, 
+        "PhoneNumber" : "949-366-6750", 
+        "SiteAddress" : "121 AVENIDA VICTORIA", 
+        "City" : "San Clemente", 
+        "Battalion" : "6", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 60, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC60", 
+        "Latitude" : 33.4255787248, 
+        "Longitude" : -117.6122434377, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 120, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.660778788, 33.498959529
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 120, 
+        "PhoneNumber" : "949-831-0872", 
+        "SiteAddress" : "31865 DEL OBISPO ST", 
+        "City" : "San Juan Capistrano", 
+        "Battalion" : "6", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 7, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC07", 
+        "Latitude" : 33.4989593568, 
+        "Longitude" : -117.6607786013, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 121, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.106134545, 33.7418885650001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 121, 
+        "PhoneNumber" : "562-431-0648", 
+        "SiteAddress" : "718 CENTRAL AVE", 
+        "City" : "Seal Beach", 
+        "Battalion" : "1", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 44, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC44", 
+        "Latitude" : 33.7418883612, 
+        "Longitude" : -118.106134299, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 122, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.077176097, 33.772834066
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 122, 
+        "PhoneNumber" : "562-430-0415", 
+        "SiteAddress" : "3131 NORTH GATE RD", 
+        "City" : "Seal Beach", 
+        "Battalion" : "1", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 48, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC48", 
+        "Latitude" : 33.7728338581, 
+        "Longitude" : -118.0771758544, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 124, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.659101572, 33.743480871
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 124, 
+        "PhoneNumber" : "714-649-0190", 
+        "SiteAddress" : "27172 SILVERADO CANYON RD", 
+        "City" : "Silverado Canyon (Unincorporated)", 
+        "Battalion" : "3", 
+        "Division" : "4", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 15, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC15", 
+        "Latitude" : 33.7434806662, 
+        "Longitude" : -117.6591013853, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 126, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.877984029, 33.760366984
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 126, 
+        "PhoneNumber" : "714-567-3271", 
+        "SiteAddress" : "1029 W 17TH ST", 
+        "City" : "Santa Ana", 
+        "Battalion" : "9", 
+        "Division" : "6", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 71, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC71", 
+        "Latitude" : 33.7603667781, 
+        "Longitude" : -117.8779838131, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 127, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.844048264, 33.7478674010001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 127, 
+        "PhoneNumber" : "714-567-3260", 
+        "SiteAddress" : "1668 E 4TH ST", 
+        "City" : "Santa Ana", 
+        "Battalion" : "9", 
+        "Division" : "6", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 72, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC72", 
+        "Latitude" : 33.7478671961, 
+        "Longitude" : -117.8440480521, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 128, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.893759394, 33.7419645460001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 128, 
+        "PhoneNumber" : "714-567-3264", 
+        "SiteAddress" : "419 S FRANKLIN ST", 
+        "City" : "Santa Ana", 
+        "Battalion" : "9", 
+        "Division" : "6", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 73, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC73", 
+        "Latitude" : 33.7419643421, 
+        "Longitude" : -117.8937591759, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 129, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.869595841, 33.727870981
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 129, 
+        "PhoneNumber" : "714-567-3230", 
+        "SiteAddress" : "1427 S BROADWAY", 
+        "City" : "Santa Ana", 
+        "Battalion" : "9", 
+        "Division" : "6", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 74, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC74", 
+        "Latitude" : 33.7278707791, 
+        "Longitude" : -117.8695956262, 
+        "DivisionHQ" : "Y", 
+        "BattalionHQ" : "Y"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 130, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.868323242, 33.7441306770001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 130, 
+        "PhoneNumber" : "714-567-3255", 
+        "SiteAddress" : "120 W WALNUT ST", 
+        "City" : "Santa Ana", 
+        "Battalion" : "9", 
+        "Division" : "6", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 75, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC75", 
+        "Latitude" : 33.7441304728, 
+        "Longitude" : -117.8683230274, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 131, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.880094694, 33.699640733
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 131, 
+        "PhoneNumber" : "714-850-4576", 
+        "SiteAddress" : "950 W MACARTHUR BLVD", 
+        "City" : "Santa Ana", 
+        "Battalion" : "9", 
+        "Division" : "6", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 76, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC76", 
+        "Latitude" : 33.6996405341, 
+        "Longitude" : -117.8800944782, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 132, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.903770331, 33.715603334
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 132, 
+        "PhoneNumber" : "714-850-4577", 
+        "SiteAddress" : "2317 S GREENVILLE ST", 
+        "City" : "Santa Ana", 
+        "Battalion" : "9", 
+        "Division" : "6", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 77, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC77", 
+        "Latitude" : 33.7156031333, 
+        "Longitude" : -117.9037701117, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 133, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.928510335, 33.7491049280001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 133, 
+        "PhoneNumber" : "714-265-4878", 
+        "SiteAddress" : "501 N NEWHOPE ST", 
+        "City" : "Santa Ana", 
+        "Battalion" : "9", 
+        "Division" : "6", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 78, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC78", 
+        "Latitude" : 33.7491047227, 
+        "Longitude" : -117.9285101117, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 134, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.853033147, 33.7156339690001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 134, 
+        "PhoneNumber" : "714-850-4579", 
+        "SiteAddress" : "1320 E WARNER AVE", 
+        "City" : "Santa Ana", 
+        "Battalion" : "9", 
+        "Division" : "6", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 79, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC79", 
+        "Latitude" : 33.7156337679, 
+        "Longitude" : -117.8530329345, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 135, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.849779903, 33.7674964240001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 135, 
+        "PhoneNumber" : "714-567-3270", 
+        "SiteAddress" : "2301 N OLD GRAND ST", 
+        "City" : "Santa Ana", 
+        "Battalion" : "9", 
+        "Division" : "6", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 70, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC70", 
+        "Latitude" : 33.7674962169, 
+        "Longitude" : -117.8497796901, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 136, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.995111859, 33.8074685650001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 136, 
+        "PhoneNumber" : "714-827-0533", 
+        "SiteAddress" : "7871 PACIFIC ST", 
+        "City" : "Stanton", 
+        "Battalion" : "8", 
+        "Division" : "7", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 46, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC46", 
+        "Latitude" : 33.8074683524, 
+        "Longitude" : -117.9951116267, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 137, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.591816173, 33.658392268
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 137, 
+        "PhoneNumber" : "949-858-9369", 
+        "SiteAddress" : "30942 TRABUCO CANYON RD", 
+        "City" : "Trabuco Canyon (Unincorporated)", 
+        "Battalion" : "7", 
+        "Division" : "3", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 18, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC18", 
+        "Latitude" : 33.6583920747, 
+        "Longitude" : -117.5918159953, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 139, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.807529368, 33.747433437
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 139, 
+        "PhoneNumber" : "714-544-0171", 
+        "SiteAddress" : "1241 IRVINE BLVD", 
+        "City" : "Tustin", 
+        "Battalion" : "3", 
+        "Division" : "4", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 21, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC21", 
+        "Latitude" : 33.7474332325, 
+        "Longitude" : -117.807529161, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "Y"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 140, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.770740793, 33.749660039
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 140, 
+        "PhoneNumber" : "714-544-7462", 
+        "SiteAddress" : "11490 PIONEER RD", 
+        "City" : "Tustin", 
+        "Battalion" : "3", 
+        "Division" : "4", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 43, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC43", 
+        "Latitude" : 33.749659834, 
+        "Longitude" : -117.7707405915, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 141, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.816858985, 33.714520937
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 141, 
+        "PhoneNumber" : "714-259-7720", 
+        "SiteAddress" : "15011 KENSINGTON PARK DR", 
+        "City" : "Tustin", 
+        "Battalion" : "3", 
+        "Division" : "4", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 37, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC37", 
+        "Latitude" : 33.7145207366, 
+        "Longitude" : -117.8168587772, 
+        "DivisionHQ" : "Y", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 142, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.780256885, 33.7728004090001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 142, 
+        "PhoneNumber" : "714-544-5292", 
+        "SiteAddress" : "10631 SKYLINE DR", 
+        "City" : "Tustin Unincorporated, Lemon Heights, Cowan Heights, and Santa Ana Unincorporated", 
+        "Battalion" : "3", 
+        "Division" : "4", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 8, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC08", 
+        "Latitude" : 33.7728002009, 
+        "Longitude" : -117.7802566818, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 143, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.000950392, 33.7596119090001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 143, 
+        "PhoneNumber" : "714-379-4920", 
+        "SiteAddress" : "7351 WESTMINSTER BLVD", 
+        "City" : "Westminster", 
+        "Battalion" : "1", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 64, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC64", 
+        "Latitude" : 33.7596117033, 
+        "Longitude" : -118.00095016, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "Y"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 144, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -118.023441439, 33.7619333810001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 144, 
+        "PhoneNumber" : "714-379-4931", 
+        "SiteAddress" : "6061 HEFLEY ST", 
+        "City" : "Westminster", 
+        "Battalion" : "1", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 65, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC65", 
+        "Latitude" : 33.7619331748, 
+        "Longitude" : -118.0234412032, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 145, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.96782496, 33.7438375510001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 145, 
+        "PhoneNumber" : "714-379-4935", 
+        "SiteAddress" : "15061 MORAN ST", 
+        "City" : "Westminster", 
+        "Battalion" : "1", 
+        "Division" : "1", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 66, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC66", 
+        "Latitude" : 33.7438373468, 
+        "Longitude" : -117.9678247323, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 146, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.812313916, 33.89121428
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 146, 
+        "PhoneNumber" : "714-970-1216", 
+        "SiteAddress" : "18422 LEMON DR", 
+        "City" : "Yorba Linda", 
+        "Battalion" : "2", 
+        "Division" : "4", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 10, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC10", 
+        "Latitude" : 33.8912140561, 
+        "Longitude" : -117.8123137085, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "Y"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 147, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.765867742, 33.890778541
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 147, 
+        "PhoneNumber" : "714-970-0344", 
+        "SiteAddress" : "20990 YORBA LINDA BLVD", 
+        "City" : "Yorba Linda", 
+        "Battalion" : "2", 
+        "Division" : "4", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 32, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC32", 
+        "Latitude" : 33.8907783177, 
+        "Longitude" : -117.7658675401, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 148, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -117.710415602, 33.874296342
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 148, 
+        "PhoneNumber" : "714-692-8381", 
+        "SiteAddress" : "25415 LA PALMA AVE", 
+        "City" : "Yorba Linda", 
+        "Battalion" : "2", 
+        "Division" : "4", 
+        "OCFA" : "Y", 
+        "County" : "Orange County", 
+        "StationNumber" : 53, 
+        "Agency" : "Orange County Fire Authority", 
+        "Alias" : "ORC53", 
+        "Latitude" : 33.8742961207, 
+        "Longitude" : -117.710415408, 
+        "DivisionHQ" : "N", 
+        "BattalionHQ" : "N"
+      }
+    }
+  ]
+}
