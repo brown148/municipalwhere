@@ -55,7 +55,7 @@
 
 @media (max-width: 768px) {
   .card {
-      width: 95%; /* More width on smaller screens */
+      width: 350px; /* More width on smaller screens */
   }
 
   .label, .value, .location, .distance {
