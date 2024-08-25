@@ -7,7 +7,7 @@ import cityData from './data/cityData.json';
 import countyData from './data/countyData.json';
 import zipCodes from './data/zipcodes.json';
 import supData from './data/supData.json';
-import privateSchoolData from './data/privateSchoolData.json';
+import schoolDistrictData from './data/schoolDistricts.json';
 import fireStations from './data/fireStations.json';
 
 export default function App() {
@@ -83,12 +83,12 @@ export default function App() {
       ),
     },
     {
-      key: 'PrivateSchool',
+      key: 'SchoolDistrict',
       component: (
-        <LocationAnalyzerClosest
-          featureData={privateSchoolData}
-          keyField="School"
-          featureType="Private School"
+        <LocationAnalyzer
+          featureData={schoolDistrictData}
+          fields={[{ key: 'S_DISTRICT', label: 'School District' }]}
+          featureType="School District"
         />
       ),
     },
