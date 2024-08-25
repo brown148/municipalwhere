@@ -17,9 +17,8 @@ export default function App() {
     ZipCode: true,
     Sup: true,
     School: true,
-    SchoolDistrict: false,
+    SchoolDistrict: true,
     FireStation: true,
-    Congress: true,
     DeviceLocation: true,
   });
 
@@ -86,7 +85,7 @@ export default function App() {
       key: 'SchoolDistrict',
       component: (
         <LocationAnalyzer
-          featureData={schoolDistrictData}
+          featureData={schoolDistrictData.features}
           fields={[{ key: 'S_DISTRICT', label: 'School District' }]}
           featureType="School District"
         />
