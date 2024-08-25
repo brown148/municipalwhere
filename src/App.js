@@ -17,7 +17,7 @@ export default function App() {
     ZipCode: true,
     Sup: true,
     School: true,
-    PrivateSchool: false,
+    SchoolDistrict: false,
     FireStation: true,
     Congress: true,
     DeviceLocation: true,
