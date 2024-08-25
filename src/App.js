@@ -8,16 +8,17 @@ import countyData from './data/countyData.json';
 import zipCodes from './data/zipcodes.json';
 import supData from './data/supData.json';
 import schoolDistrictData from './data/schoolDistricts.json';
+import waterDistrictData from './data/waterDistricts.json';
 import fireStations from './data/fireStations.json';
 
 export default function App() {
   const [cardVisibility, setCardVisibility] = useState({
     City: true,
-    County: true,
-    ZipCode: true,
-    Sup: true,
-    School: true,
+    County: false,
+    ZipCode: false,
+    Sup: false,
     SchoolDistrict: true,
+    WaterDistrict: true,
     FireStation: true,
     DeviceLocation: true,
   });
@@ -91,6 +92,18 @@ export default function App() {
             { key: 'S_DISTRICT', label: 'School District' }
             ]}
           featureType="School District"
+        />
+      ),
+    },
+    {
+      key: 'WaterDistrict',
+      component: (
+        <LocationAnalyzer
+          featureData={waterDistrictData.features}
+          fields={[
+            { key: 'NAME', label: 'School District' }
+            ]}
+          featureType="Water District"
         />
       ),
     },
