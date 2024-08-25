@@ -1,11 +1,11 @@
 /* CommonCardStyles.css */
 .card {
-    width: 480px;
+    width: 400px;
     height: 75px;
     border: 1px solid #D0D0D0;
     border-radius: 4px;
     background-color: #FFFFFF;
-    padding: 10px;
+    //padding: 10px;
     position: relative;
     margin: 5px 0;
   }

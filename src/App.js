@@ -166,12 +166,11 @@ const styles = {
     alignItems: 'center',
     backgroundColor: '#FAFAFA',
     width: '100%',
-    maxWidth: '500px',
     margin: '0 auto',
   },
   header: {
     width: '100%',
-    padding: '10px',
+    //padding: '10px',
     backgroundColor: '#FAFAFA',
     display: 'flex',
     justifyContent: 'center',
