@@ -51,9 +51,9 @@ export default function LocationAnalyzerClosest({ featureData, keyField, feature
   };
 
   return (
-    <div>
+    <div className="card">
       {nearestPoint ? (
-        <div className="card">
+        <div >
           <span className="label">Nearest {featureType}</span>
           <span className="value">{nearestPoint.properties[keyField]}</span>
           <span className="distance">{distance} mi {bearing}</span>

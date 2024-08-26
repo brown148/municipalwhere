@@ -43,7 +43,7 @@ export default function App() {
     { key: 'City', component: <LocationAnalyzer featureData={cityData.features} fields={[{ key: 'CITY', label: 'City' }]} keyField="CITY" featureType="CITY" /> },
     { key: 'County', component: <LocationAnalyzer featureData={countyData.features} fields={[{ key: 'COUNTY_NAME', label: 'County' }]} featureType="County" /> },
     { key: 'ZipCode', component: <LocationAnalyzer featureData={zipCodes.features} fields={[{ key: 'ZIP_CODE', label: 'Zip Code' }, { key: 'POPULATION', label: 'Population' }, { key: 'POP_SQMI', label: 'Pop. Per Sq. Mi.' }]} featureType="Zip Code" /> },
-    { key: 'Sup', component: <LocationAnalyzer featureData={supData.features} fields={[{ key: 'NAME', label: 'County Supervisor' }]} featureType="Supervisorial District" /> },
+    { key: 'Sup', component: <LocationAnalyzer featureData={supData.features} fields={[{ key: 'NAME', label: 'County Supervisor' },{ key: 'Label', label: 'Area' }]} featureType="Supervisorial District" /> },
     { key: 'SchoolDistrict', component: <LocationAnalyzer featureData={schoolDistrictData.features} fields={[{ key: 'SCHOOL', label: 'School District' }, { key: 'S_DISTRICT', label: 'School District' }]} featureType="School District" /> },
     { key: 'WaterDistrict', component: <LocationAnalyzer featureData={waterDistrictData.features} fields={[{ key: 'NAME', label: 'Water District' }]} featureType="Water District" /> },
     { key: 'FireStation', component: <LocationAnalyzerClosest featureData={fireStations} keyField="Alias" featureType="Fire Station" /> },
@@ -54,7 +54,7 @@ export default function App() {
     <div style={styles.container}>
       <header style={styles.header}>
         <h1 style={styles.h1}>The Municipal Where</h1>
-        <h4 style={styles.h4}>Where Jurisdictions Overlap</h4>
+        <h4 style={styles.h4}>One Location, Many Layers of Governance</h4>
       </header>
       <hr style={styles.divider} />
       <main style={styles.scrollViewContent}>
@@ -72,7 +72,7 @@ export default function App() {
             Toggle Cards
           </button>
         </div>
-        <h5>©2024 The Municipal Where</h5>
+        <h4 style={styles.h4}>©2024 The Municipal Where</h4>
       </main>
 
       {isModalVisible && (
