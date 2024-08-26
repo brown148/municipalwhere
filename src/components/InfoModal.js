@@ -1,5 +1,5 @@
 import React from 'react';
-import './InfoModal.css'; // Import the CSS file for styles
+import '../InfoModal.css'; // Import the CSS file for styles
 
 function toProperCase(input) {
   return input

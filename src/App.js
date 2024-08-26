@@ -90,7 +90,7 @@ export default function App() {
           fields={[
             { key: 'SCHOOL', label: 'School District' },
             { key: 'S_DISTRICT', label: 'School District' }
-            ]}
+          ]}
           featureType="School District"
         />
       ),
@@ -101,8 +101,8 @@ export default function App() {
         <LocationAnalyzer
           featureData={waterDistrictData.features}
           fields={[
-            { key: 'NAME', label: 'School District' }
-            ]}
+            { key: 'NAME', label: 'Water District' }
+          ]}
           featureType="Water District"
         />
       ),
@@ -153,13 +153,13 @@ export default function App() {
             {Object.keys(cardVisibility).map((cardType) => (
               <div style={styles.cardToggle} key={cardType}>
                 <p style={styles.modalText}>{cardType}</p>
-                <label style={{display: 'inline-flex', alignItems: 'center'}}>
+                <label style={styles.checkboxLabel}>
                   <input
                     type="checkbox"
                     checked={cardVisibility[cardType]}
                     onChange={() => toggleCardVisibility(cardType)}
                   />
-                  <span style={{marginLeft: '8px'}}>{cardType}</span>
+                  <span style={styles.checkboxText}>{cardType}</span>
                 </label>
               </div>
             ))}
@@ -180,12 +180,13 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#FAFAFA',
-    width: '400px',
+    width: '380px',
+    maxWidth: '1200px', // Set a max width for better scaling
     margin: '0 auto',
   },
   header: {
-    width: '380px',
-    //padding: '10px',
+    width: '100%',
+    maxWidth: '1200px',
     backgroundColor: '#FAFAFA',
     display: 'flex',
     justifyContent: 'center',
@@ -193,19 +194,20 @@ const styles = {
   },
   h1: {
     fontFamily: 'Times New Roman',
-    fontSize: '35px',
+    fontSize: '2rem',
     fontWeight: '500',
     textAlign: 'center',
     color: '#333',
   },
   divider: {
-    width: '380px',
+    width: '100%',
+    maxWidth: '1200px',
     height: '1px',
     backgroundColor: '#E0E0E0',
-    //margin: '10px 0',
   },
   scrollViewContent: {
     display: 'flex',
+    flexDirection: 'column',
     alignItems: 'center',
     width: '100%',
   },
@@ -238,17 +240,18 @@ const styles = {
   },
   modalContent: {
     backgroundColor: '#FFFFFF',
-    padding: '20px',
-    borderRadius: '10px',
+    padding: '1rem',
+    borderRadius: '0.5rem',
     width: '80%',
+    maxWidth: '400px', // Adjusted max width for smaller modal
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
   },
   modalTitle: {
-    fontSize: '20px',
+    fontSize: '1.5rem',
     fontWeight: '500',
-    marginBottom: '10px',
+    marginBottom: '1rem',
     color: '#333',
   },
   modalText: {
@@ -258,14 +261,21 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: '10px',
+    marginBottom: '0.5rem',
     width: '100%',
+  },
+  checkboxLabel: {
+    display: 'inline-flex',
+    alignItems: 'center',
+  },
+  checkboxText: {
+    marginLeft: '8px',
   },
   closeButton: {
     backgroundColor: '#333',
-    padding: '10px',
-    borderRadius: '5px',
-    marginTop: '10px',
+    padding: '0.5rem 1rem',
+    borderRadius: '0.25rem',
+    marginTop: '1rem',
     color: '#FAFAFA',
     fontWeight: '500',
     border: 'none',
