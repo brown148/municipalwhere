@@ -13,14 +13,14 @@ import fireStations from './data/fireStations.json';
 
 export default function App() {
   const [cardVisibility, setCardVisibility] = useState({
-    City: true,
-    County: false,
-    ZipCode: false,
-    Sup: false,
-    SchoolDistrict: true,
-    WaterDistrict: true,
-    FireStation: true,
-    DeviceLocation: true,
+    City: { visible: true, label: 'City' },
+    County: { visible: false, label: 'County' },
+    ZipCode: { visible: false, label: 'Zip Code' },
+    Sup: { visible: false, label: 'County Supervisor' },
+    SchoolDistrict: { visible: true, label: 'School District' },
+    WaterDistrict: { visible: true, label: 'Water District' },
+    FireStation: { visible: true, label: 'Nearest Fire Station' },
+    DeviceLocation: { visible: true, label: 'Device Location' },
   });
 
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -28,7 +28,10 @@ export default function App() {
   const toggleCardVisibility = (cardType) => {
     setCardVisibility((prevState) => ({
       ...prevState,
-      [cardType]: !prevState[cardType],
+      [cardType]: {
+        ...prevState[cardType],
+        visible: !prevState[cardType].visible,
+      },
     }));
   };
 
@@ -37,106 +40,28 @@ export default function App() {
   };
 
   const cardsConfig = [
-    {
-      key: 'City',
-      component: (
-        <LocationAnalyzer
-          featureData={cityData.features}
-          fields={[{ key: 'CITY', label: 'City' }]}
-          keyField="CITY"
-          featureType="CITY"
-        />
-      ),
-    },
-    {
-      key: 'County',
-      component: (
-        <LocationAnalyzer
-          featureData={countyData.features}
-          fields={[{ key: 'COUNTY_NAME', label: 'County' }]}
-          featureType="County"
-        />
-      ),
-    },
-    {
-      key: 'ZipCode',
-      component: (
-        <LocationAnalyzer
-          featureData={zipCodes.features}
-          fields={[
-            { key: 'ZIP_CODE', label: 'Zip Code' },
-            { key: 'POPULATION', label: 'Population' },
-            { key: 'POP_SQMI', label: 'Pop. Per Sq. Mi.' },
-          ]}
-          featureType="Zip Code"
-        />
-      ),
-    },
-    {
-      key: 'Sup',
-      component: (
-        <LocationAnalyzer
-          featureData={supData.features}
-          fields={[{ key: 'NAME', label: 'County Supervisor' }]}
-          featureType="Supervisorial District"
-        />
-      ),
-    },
-    {
-      key: 'SchoolDistrict',
-      component: (
-        <LocationAnalyzer
-          featureData={schoolDistrictData.features}
-          fields={[
-            { key: 'SCHOOL', label: 'School District' },
-            { key: 'S_DISTRICT', label: 'School District' }
-          ]}
-          featureType="School District"
-        />
-      ),
-    },
-    {
-      key: 'WaterDistrict',
-      component: (
-        <LocationAnalyzer
-          featureData={waterDistrictData.features}
-          fields={[
-            { key: 'NAME', label: 'Water District' }
-          ]}
-          featureType="Water District"
-        />
-      ),
-    },
-    {
-      key: 'FireStation',
-      component: (
-        <LocationAnalyzerClosest
-          featureData={fireStations}
-          keyField="Alias"
-          featureType="Fire Station"
-        />
-      ),
-    },
-    {
-      key: 'DeviceLocation',
-      component: (
-        <DeviceLocation />
-      ),
-    }
+    { key: 'City', component: <LocationAnalyzer featureData={cityData.features} fields={[{ key: 'CITY', label: 'City' }]} keyField="CITY" featureType="CITY" /> },
+    { key: 'County', component: <LocationAnalyzer featureData={countyData.features} fields={[{ key: 'COUNTY_NAME', label: 'County' }]} featureType="County" /> },
+    { key: 'ZipCode', component: <LocationAnalyzer featureData={zipCodes.features} fields={[{ key: 'ZIP_CODE', label: 'Zip Code' }, { key: 'POPULATION', label: 'Population' }, { key: 'POP_SQMI', label: 'Pop. Per Sq. Mi.' }]} featureType="Zip Code" /> },
+    { key: 'Sup', component: <LocationAnalyzer featureData={supData.features} fields={[{ key: 'NAME', label: 'County Supervisor' }]} featureType="Supervisorial District" /> },
+    { key: 'SchoolDistrict', component: <LocationAnalyzer featureData={schoolDistrictData.features} fields={[{ key: 'SCHOOL', label: 'School District' }, { key: 'S_DISTRICT', label: 'School District' }]} featureType="School District" /> },
+    { key: 'WaterDistrict', component: <LocationAnalyzer featureData={waterDistrictData.features} fields={[{ key: 'NAME', label: 'Water District' }]} featureType="Water District" /> },
+    { key: 'FireStation', component: <LocationAnalyzerClosest featureData={fireStations} keyField="Alias" featureType="Fire Station" /> },
+    { key: 'DeviceLocation', component: <DeviceLocation /> },
   ];
 
   return (
     <div style={styles.container}>
       <header style={styles.header}>
         <h1 style={styles.h1}>The Municipal Where</h1>
-        <h4 style={styles.slogan}>One Location, Many Layers of Governance</h4>
+        <h4 style={styles.h4}>Where Jurisdictions Overlap</h4>
       </header>
       <hr style={styles.divider} />
       <main style={styles.scrollViewContent}>
         <div style={styles.cardsContainer}>
           {cardsConfig.map(
             (card) =>
-              cardVisibility[card.key] && (
+              cardVisibility[card.key].visible && (
                 <div style={styles.card} key={card.key}>
                   {card.component}
                 </div>
@@ -147,26 +72,25 @@ export default function App() {
             Toggle Cards
           </button>
         </div>
-        <h5 style={styles.copyright}>©2024 The Municipal Where</h5>
+        <h5>©2024 The Municipal Where</h5>
       </main>
 
       {isModalVisible && (
         <div style={styles.modalContainer}>
           <div style={styles.modalContent}>
             <h2 style={styles.modalTitle}>Toggle Cards</h2>
-            {Object.keys(cardVisibility).map((cardType) => (
-              <div style={styles.cardToggle} key={cardType}>
-                <p style={styles.modalText}>{cardType}</p>
-                <label style={styles.checkboxLabel}>
+            <div style={styles.cardTogglesContainer}>
+              {Object.keys(cardVisibility).map((cardType) => (
+                <label style={styles.checkboxLabel} key={cardType}>
                   <input
                     type="checkbox"
-                    checked={cardVisibility[cardType]}
+                    checked={cardVisibility[cardType].visible}
                     onChange={() => toggleCardVisibility(cardType)}
                   />
-                  <span style={styles.checkboxText}>{cardType}</span>
+                  <span style={styles.checkboxText}>{cardVisibility[cardType].label}</span>
                 </label>
-              </div>
-            ))}
+              ))}
+            </div>
             <button style={styles.closeButton} onClick={toggleModal}>
               Close
             </button>
@@ -185,18 +109,18 @@ const styles = {
     alignItems: 'center',
     backgroundColor: '#FAFAFA',
     width: '380px',
-    maxWidth: '1200px', // Set a max width for better scaling
+    maxWidth: '1200px',
     margin: '0 auto',
-    position: 'relative', // Ensure the container's stacking context is established
+    position: 'relative',
   },
   header: {
     width: '100%',
     maxWidth: '1200px',
     backgroundColor: '#FAFAFA',
     display: 'flex',
-    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    flexDirection: 'column',
   },
   h1: {
     fontFamily: 'Times New Roman',
@@ -204,28 +128,21 @@ const styles = {
     fontWeight: '500',
     textAlign: 'center',
     color: '#333',
-    marginBottom: '0.1rem',
+    margin: 0,
   },
-  slogan: {
-    fontFamily: 'Times New Roman',
-    fontSize: '1rem',
-    fontStyle: 'italic',
-    textAlign: 'center',
-    color: '#555', // Slightly lighter color for the slogan
-    marginTop: '0.1rem', // Adjust bottom margin if needed
-    marginBottom: '0.1rem'
-  },
-  copyright: {
+  h4: {
     fontFamily: 'Times New Roman',
     fontSize: '1rem',
     fontWeight: '500',
     textAlign: 'center',
     color: '#333',
+    margin: '5px 0',
   },
   divider: {
     width: '360px',
     height: '1px',
     backgroundColor: '#E0E0E0',
+    margin: '10px 0',
   },
   scrollViewContent: {
     display: 'flex',
@@ -259,18 +176,18 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    zIndex: 1000, // Ensure the modal is on top
+    zIndex: 1000,
   },
   modalContent: {
     backgroundColor: '#FFFFFF',
     padding: '1rem',
     borderRadius: '0.5rem',
     width: '80%',
-    maxWidth: '400px', // Adjusted max width for smaller modal
+    maxWidth: '400px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    zIndex: 1001, // Ensure the content is on top of the overlay
+    zIndex: 1001,
   },
   modalTitle: {
     fontSize: '1.5rem',
@@ -278,22 +195,23 @@ const styles = {
     marginBottom: '1rem',
     color: '#333',
   },
-  modalText: {
-    color: '#666',
-  },
-  cardToggle: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginBottom: '0.5rem',
+  cardTogglesContainer: {
     width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    marginBottom: '1rem',
   },
   checkboxLabel: {
     display: 'inline-flex',
     alignItems: 'center',
+    marginBottom: '0.5rem',
+    width: '100%',
   },
   checkboxText: {
     marginLeft: '8px',
+    fontSize: '1rem',
+    color: '#333',
   },
   closeButton: {
     backgroundColor: '#333',
