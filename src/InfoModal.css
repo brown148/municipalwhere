@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000; /* Ensure the overlay is above other content */
   }
   
   .modal-content {
@@ -19,6 +20,7 @@
     max-width: 25rem; /* Reduced maximum width */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for a subtle effect */
+    z-index: 1001; /* Ensure the content is on top of the overlay */
   }
   
   .modal-title {
@@ -43,7 +45,7 @@
   .table-row {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0; /* Consistent padding */
+    padding: 0; /* Consistent padding */
   }
   
   .table-cell-label,
@@ -66,6 +68,7 @@
     border: 1px solid #d0d0d0; /* Border to match other buttons */
     border-radius: 0.25rem; /* Consistent border radius */
     cursor: pointer;
+    z-index: 1001; /* Ensure the close button is on top of the modal content */
   }
   
   .close-button:hover {

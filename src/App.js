@@ -141,11 +141,13 @@ export default function App() {
                 </div>
               )
           )}
+          <hr style={styles.divider} />
           <button style={styles.toggleButton} onClick={toggleModal}>
             Toggle Cards
           </button>
         </div>
       </main>
+
       {isModalVisible && (
         <div style={styles.modalContainer}>
           <div style={styles.modalContent}>
@@ -183,6 +185,7 @@ const styles = {
     width: '380px',
     maxWidth: '1200px', // Set a max width for better scaling
     margin: '0 auto',
+    position: 'relative', // Ensure the container's stacking context is established
   },
   header: {
     width: '100%',
@@ -200,7 +203,7 @@ const styles = {
     color: '#333',
   },
   divider: {
-    width: '100%',
+    width: '360px',
     maxWidth: '1200px',
     height: '1px',
     backgroundColor: '#E0E0E0',
@@ -237,6 +240,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    zIndex: 1000, // Ensure the modal is on top
   },
   modalContent: {
     backgroundColor: '#FFFFFF',
@@ -247,6 +251,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    zIndex: 1001, // Ensure the content is on top of the overlay
   },
   modalTitle: {
     fontSize: '1.5rem',
