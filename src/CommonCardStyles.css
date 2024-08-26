@@ -2,7 +2,7 @@
 
 .card {
   width: 360px; /* Relative width to the parent container */
-  height: 75px; /* Let height adjust based on content */
+  height: 70px; /* Let height adjust based on content */
   border: 1px solid #D0D0D0;
   border-radius: 4px;
   background-color: #FFFFFF;

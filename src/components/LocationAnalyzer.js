@@ -7,6 +7,7 @@ import '../CommonCardStyles.css'; // Import the CSS file
 export default function LocationAnalyzer({ featureData, fields = [], featureType }) {
   const [insideFeature, setInsideFeature] = useState(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [highlight, setHighlight] = useState(false); // State for highlight effect
 
   const fetchUserLocation = async () => {
     try {
@@ -54,6 +55,16 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
     fetchUserLocation();
   }, [featureData]);
 
+  useEffect(() => {
+    if (insideFeature) {
+      setHighlight(true);
+      const timer = setTimeout(() => {
+        setHighlight(false);
+      }, 500); // Highlight for 500ms
+      return () => clearTimeout(timer);
+    }
+  }, [insideFeature]); // Trigger effect on insideFeature change
+
   const formatValue = (value, isString) => {
     if (isString) {
       return value;
@@ -69,7 +80,9 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
       {insideFeature ? (
         <div className="card" onClick={() => setIsModalVisible(true)}>
           <span className="label">{fields[0].label}</span>
-          <span className="value">
+          <span
+            className={`value ${highlight ? 'highlight' : ''}`}
+          >
             {formatValue(insideFeature.properties[fields[0].key], true)}
           </span>
         </div>

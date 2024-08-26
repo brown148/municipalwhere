@@ -129,6 +129,7 @@ export default function App() {
     <div style={styles.container}>
       <header style={styles.header}>
         <h1 style={styles.h1}>The Municipal Where</h1>
+        <h4 style={styles.slogan}>One Location, Many Layers of Governance</h4>
       </header>
       <hr style={styles.divider} />
       <main style={styles.scrollViewContent}>
@@ -146,6 +147,7 @@ export default function App() {
             Toggle Cards
           </button>
         </div>
+        <h5 style={styles.copyright}>©2024 The Municipal Where</h5>
       </main>
 
       {isModalVisible && (
@@ -192,6 +194,7 @@ const styles = {
     maxWidth: '1200px',
     backgroundColor: '#FAFAFA',
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -201,10 +204,26 @@ const styles = {
     fontWeight: '500',
     textAlign: 'center',
     color: '#333',
+    marginBottom: '0.1rem',
+  },
+  slogan: {
+    fontFamily: 'Times New Roman',
+    fontSize: '1rem',
+    fontStyle: 'italic',
+    textAlign: 'center',
+    color: '#555', // Slightly lighter color for the slogan
+    marginTop: '0.1rem', // Adjust bottom margin if needed
+    marginBottom: '0.1rem'
+  },
+  copyright: {
+    fontFamily: 'Times New Roman',
+    fontSize: '1rem',
+    fontWeight: '500',
+    textAlign: 'center',
+    color: '#333',
   },
   divider: {
     width: '360px',
-    maxWidth: '1200px',
     height: '1px',
     backgroundColor: '#E0E0E0',
   },
