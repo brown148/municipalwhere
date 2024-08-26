@@ -59,7 +59,7 @@ export default function LocationAnalyzerClosest({ featureData, keyField, feature
           <span className="distance">{distance} mi {bearing}</span>
         </div>
       ) : (
-        <p>Loading nearest {featureType}...</p>
+        <p className="label">Loading nearest {featureType}...</p>
       )}
     </div>
   );

@@ -39,7 +39,7 @@ const UserLocationInfo = ({ backgroundColor = '#fff' }) => {
         <div className="card">
           <span className="label">User Location</span>
           <span className="location">
-            Altitude: {userLocation.altitude ? (userLocation.altitude * 3.28084).toFixed(0) : 'N/A'} ft. at {userLocation.latitude.toFixed(2)}°, {userLocation.longitude.toFixed(2)}°
+            {userLocation.altitude ? (userLocation.altitude * 3.28084).toFixed(0) : 'N/A'} ft. at {userLocation.latitude.toFixed(2)}°, {userLocation.longitude.toFixed(2)}°
           </span>
         </div>
       ) : (

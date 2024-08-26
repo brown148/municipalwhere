@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { booleanPointInPolygon } from '@turf/turf';
 import InfoModal from './InfoModal';
@@ -7,63 +7,54 @@ import '../CommonCardStyles.css'; // Import the CSS file
 export default function LocationAnalyzer({ featureData, fields = [], featureType }) {
   const [insideFeature, setInsideFeature] = useState(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [highlight, setHighlight] = useState(false); // State for highlight effect
+  const featureDataRef = useRef(featureData);
 
-  const fetchUserLocation = async () => {
-    try {
-      if (!navigator.geolocation) {
-        console.error('Geolocation is not supported by this browser');
-        return;
-      }
-
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { longitude, latitude } = position.coords;
-
-          const userLocationDataObj = {
-            type: 'Feature',
-            geometry: {
-              type: 'Point',
-              coordinates: [longitude, latitude],
-            },
-            properties: {
-              name: 'Device',
-              description: 'This is the device location.',
-            },
-          };
-
-          for (const feature of featureData) {
-            const isInside = booleanPointInPolygon(userLocationDataObj, feature);
-            if (isInside) {
-              setInsideFeature(feature);
-              return;
-            }
-          }
-
-          setInsideFeature(null);
-        },
-        (error) => {
-          console.error('Error getting user location:', error);
-        }
-      );
-    } catch (error) {
-      console.error('Error fetching user location:', error);
+  const fetchUserLocation = () => {
+    if (!navigator.geolocation) {
+      console.error('Geolocation is not supported by this browser');
+      return;
     }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { longitude, latitude } = position.coords;
+
+        const userLocationDataObj = {
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: [longitude, latitude],
+          },
+          properties: {
+            name: 'Device',
+            description: 'This is the device location.',
+          },
+        };
+
+        for (const feature of featureDataRef.current) {
+          const isInside = booleanPointInPolygon(userLocationDataObj, feature);
+          if (isInside) {
+            setInsideFeature(feature);
+            return;
+          }
+        }
+
+        setInsideFeature(null);
+      },
+      (error) => {
+        console.error('Error getting user location:', error);
+      }
+    );
   };
 
   useEffect(() => {
     fetchUserLocation();
-  }, [featureData]);
+    const intervalId = setInterval(fetchUserLocation, 2000);
 
-  useEffect(() => {
-    if (insideFeature) {
-      setHighlight(true);
-      const timer = setTimeout(() => {
-        setHighlight(false);
-      }, 500); // Highlight for 500ms
-      return () => clearTimeout(timer);
-    }
-  }, [insideFeature]); // Trigger effect on insideFeature change
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [featureData]);
 
   const formatValue = (value, isString) => {
     if (isString) {
@@ -76,18 +67,16 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
   };
 
   return (
-    <div>
+    <div className="card" onClick={() => setIsModalVisible(true)}>
       {insideFeature ? (
-        <div className="card" onClick={() => setIsModalVisible(true)}>
+        <div>
           <span className="label">{fields[0].label}</span>
-          <span
-            className={`value ${highlight ? 'highlight' : ''}`}
-          >
+          <span className="value">
             {formatValue(insideFeature.properties[fields[0].key], true)}
           </span>
         </div>
       ) : (
-        <p>
+        <p className="label">
           User Device is not inside any {featureType}.
         </p>
       )}
