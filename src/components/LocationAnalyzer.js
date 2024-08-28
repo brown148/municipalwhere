@@ -10,6 +10,8 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
   const featureDataRef = useRef(featureData);
 
   const fetchUserLocation = () => {
+    console.log('Checking user location...');
+
     if (!navigator.geolocation) {
       console.error('Geolocation is not supported by this browser');
       return;
@@ -18,6 +20,8 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const { longitude, latitude } = position.coords;
+
+        console.log(`User location obtained: Longitude=${longitude}, Latitude=${latitude}`);
 
         const userLocationDataObj = {
           type: 'Feature',
@@ -31,15 +35,22 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
           },
         };
 
+        let foundInsideFeature = false;
+
         for (const feature of featureDataRef.current) {
           const isInside = booleanPointInPolygon(userLocationDataObj, feature);
           if (isInside) {
+            console.log('User is inside a feature.');
             setInsideFeature(feature);
-            return;
+            foundInsideFeature = true;
+            break;
           }
         }
 
-        setInsideFeature(null);
+        if (!foundInsideFeature) {
+          console.log('User is not inside any feature.');
+          setInsideFeature(null);
+        }
       },
       (error) => {
         console.error('Error getting user location:', error);
@@ -48,13 +59,19 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
   };
 
   useEffect(() => {
+    console.log('Component mounted or featureData changed. Fetching location.');
     fetchUserLocation();
-    const intervalId = setInterval(fetchUserLocation, 2000);
+
+    const intervalId = setInterval(() => {
+      console.log('Interval fetch triggered.');
+      fetchUserLocation();
+    }, 2000);
 
     return () => {
+      console.log('Cleaning up interval on component unmount.');
       clearInterval(intervalId);
     };
-  }, [featureData]);
+  }, [featureData]); // Ensures location is fetched when featureData changes or component mounts
 
   const formatValue = (value, isString) => {
     if (isString) {
@@ -65,6 +82,8 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
     }
     return value;
   };
+
+  console.log('Rendering LocationAnalyzer component.');
 
   return (
     <div className="card" onClick={() => setIsModalVisible(true)}>
