@@ -7,21 +7,22 @@ import '../CommonCardStyles.css'; // Import the CSS file
 export default function LocationAnalyzer({ featureData, fields = [], featureType }) {
   const [insideFeature, setInsideFeature] = useState(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isRefreshing, setIsRefreshing] = useState(false); // New state for refresh indicator
   const featureDataRef = useRef(featureData);
 
   const fetchUserLocation = () => {
-    console.log('Checking user location...');
+    console.log('Checking user location...'); // Log when fetching starts
+    setIsRefreshing(true); // Set refresh state to true
 
     if (!navigator.geolocation) {
       console.error('Geolocation is not supported by this browser');
+      setIsRefreshing(false); // Reset refresh state if geolocation is not supported
       return;
     }
 
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const { longitude, latitude } = position.coords;
-
-        console.log(`User location obtained: Longitude=${longitude}, Latitude=${latitude}`);
 
         const userLocationDataObj = {
           type: 'Feature',
@@ -35,43 +36,30 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
           },
         };
 
-        let foundInsideFeature = false;
+        // Check if the user is inside any of the features
+        const featureInside = featureDataRef.current.find((feature) =>
+          booleanPointInPolygon(userLocationDataObj, feature)
+        );
 
-        for (const feature of featureDataRef.current) {
-          const isInside = booleanPointInPolygon(userLocationDataObj, feature);
-          if (isInside) {
-            console.log('User is inside a feature.');
-            setInsideFeature(feature);
-            foundInsideFeature = true;
-            break;
-          }
-        }
-
-        if (!foundInsideFeature) {
-          console.log('User is not inside any feature.');
-          setInsideFeature(null);
-        }
+        setInsideFeature(featureInside || null);
+        console.log('Location update:', featureInside ? 'Inside feature' : 'Not inside any feature'); // Log location update
+        setIsRefreshing(false); // Reset refresh state after checking
       },
       (error) => {
         console.error('Error getting user location:', error);
+        setIsRefreshing(false); // Reset refresh state if there is an error
       }
     );
   };
 
   useEffect(() => {
-    console.log('Component mounted or featureData changed. Fetching location.');
-    fetchUserLocation();
-
-    const intervalId = setInterval(() => {
-      console.log('Interval fetch triggered.');
-      fetchUserLocation();
-    }, 2000);
+    fetchUserLocation(); // Initial fetch
+    const intervalId = setInterval(fetchUserLocation, 5000); // Check every 5 seconds
 
     return () => {
-      console.log('Cleaning up interval on component unmount.');
-      clearInterval(intervalId);
+      clearInterval(intervalId); // Cleanup interval on unmount
     };
-  }, [featureData]); // Ensures location is fetched when featureData changes or component mounts
+  }, [featureData]);
 
   const formatValue = (value, isString) => {
     if (isString) {
@@ -83,22 +71,24 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
     return value;
   };
 
-  console.log('Rendering LocationAnalyzer component.');
-
   return (
     <div className="card" onClick={() => setIsModalVisible(true)}>
-      {insideFeature ? (
-        <div>
-          <span className="label">{fields[0].label}</span>
-          <span className="value">
-            {formatValue(insideFeature.properties[fields[0].key], true)}
-          </span>
-        </div>
-      ) : (
-        <p className="label">
-          User Device is not inside any {featureType}.
-        </p>
-      )}
+      <div className="card-content">
+        {insideFeature ? (
+          <div>
+            <span className="label">{fields[0].label}</span>
+            <span className="value">
+              {formatValue(insideFeature.properties[fields[0].key], true)}
+            </span>
+          </div>
+        ) : (
+          <p className="label">
+            User Device is not inside any {featureType}.
+          </p>
+        )}
+        {/* Subtle dot for refresh indicator */}
+        <div className={`refresh-indicator ${isRefreshing ? 'active' : ''}`}></div>
+      </div>
       <InfoModal
         visible={isModalVisible}
         onClose={() => setIsModalVisible(false)}

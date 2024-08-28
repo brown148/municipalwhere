@@ -49,3 +49,18 @@
   top: 10px;
   right: 15px;
 }
+
+.refresh-indicator {
+  position: absolute;
+  top:50px; /* Position it at the top right of the card */
+  right: 10px; /* Position it at the top right of the card */
+  width: 10px; /* Size of the dot */
+  height: 10px; /* Size of the dot */
+  border-radius: 50%; /* Circular dot */
+  background-color: rgb(0, 0, 0); /* Default color when not refreshing */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.refresh-indicator.active {
+  background-color: rgba(128, 128, 128, 0); /* Color when refreshing */
+}

@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import LocationAnalyzer from './components/LocationAnalyzer';
 import LocationAnalyzerClosest from './components/LocationAnalyzerClosest';
 import DeviceLocation from './components/UserLocation';
+import CitySimulator from './components/CitySimulator';
 
-import cityData from './data/cityData.json';
+import cityData from './data/cityData.json'; // Assuming you still need this
 import countyData from './data/countyData.json';
 import zipCodes from './data/zipcodes.json';
 import supData from './data/supData.json';
@@ -24,6 +25,8 @@ export default function App() {
   });
 
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isSimulatorVisible, setIsSimulatorVisible] = useState(false);
+  const [deviceLocation, setDeviceLocation] = useState([34.0522, -118.2437]); // Default to LA coordinates
 
   const toggleCardVisibility = (cardType) => {
     setCardVisibility((prevState) => ({
@@ -36,18 +39,26 @@ export default function App() {
   };
 
   const toggleModal = () => {
-    setIsModalVisible(!isModalVisible);
+    setIsModalVisible((prev) => !prev);
+  };
+
+  const toggleSimulator = () => {
+    setIsSimulatorVisible((prev) => !prev);
+  };
+
+  const handleCitySelect = (coordinates) => {
+    setDeviceLocation(coordinates);
   };
 
   const cardsConfig = [
-    { key: 'City', component: <LocationAnalyzer featureData={cityData.features} fields={[{ key: 'CITY', label: 'City' }]} keyField="CITY" featureType="CITY" /> },
+    { key: 'City', component: <LocationAnalyzer featureData={cityData.features} fields={[{ key: 'CITY', label: 'City' }]} featureType="CITY" /> },
     { key: 'County', component: <LocationAnalyzer featureData={countyData.features} fields={[{ key: 'COUNTY_NAME', label: 'County' }]} featureType="County" /> },
     { key: 'ZipCode', component: <LocationAnalyzer featureData={zipCodes.features} fields={[{ key: 'ZIP_CODE', label: 'Zip Code' }, { key: 'POPULATION', label: 'Population' }, { key: 'POP_SQMI', label: 'Pop. Per Sq. Mi.' }]} featureType="Zip Code" /> },
     { key: 'Sup', component: <LocationAnalyzer featureData={supData.features} fields={[{ key: 'NAME', label: 'County Supervisor' },{ key: 'Label', label: 'Area' }]} featureType="Supervisorial District" /> },
     { key: 'SchoolDistrict', component: <LocationAnalyzer featureData={schoolDistrictData.features} fields={[{ key: 'SCHOOL', label: 'School District' }, { key: 'S_DISTRICT', label: 'School District' }]} featureType="School District" /> },
     { key: 'WaterDistrict', component: <LocationAnalyzer featureData={waterDistrictData.features} fields={[{ key: 'NAME', label: 'Water District' }]} featureType="Water District" /> },
     { key: 'FireStation', component: <LocationAnalyzerClosest featureData={fireStations} keyField="Alias" featureType="Fire Station" /> },
-    { key: 'DeviceLocation', component: <DeviceLocation /> },
+    { key: 'DeviceLocation', component: <DeviceLocation location={deviceLocation} /> },
   ];
 
   return (
@@ -70,6 +81,9 @@ export default function App() {
           <hr style={styles.divider} />
           <button style={styles.toggleButton} onClick={toggleModal}>
             Toggle Cards
+          </button>
+          <button style={styles.simulatorButton} onClick={toggleSimulator}>
+            City Simulator
           </button>
         </div>
         <h4 style={styles.h4}>©2024 The Municipal Where</h4>
@@ -96,6 +110,10 @@ export default function App() {
             </button>
           </div>
         </div>
+      )}
+
+      {isSimulatorVisible && (
+        <CitySimulator onClose={toggleSimulator} onCitySelect={handleCitySelect} />
       )}
     </div>
   );
@@ -158,6 +176,16 @@ const styles = {
   },
   toggleButton: {
     backgroundColor: '#333',
+    padding: '10px',
+    borderRadius: '5px',
+    marginTop: '10px',
+    color: '#FAFAFA',
+    fontWeight: '500',
+    border: 'none',
+    cursor: 'pointer',
+  },
+  simulatorButton: {
+    backgroundColor: '#FF6600',
     padding: '10px',
     borderRadius: '5px',
     marginTop: '10px',
