@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import LocationAnalyzer from './components/LocationAnalyzer';
 import LocationAnalyzerClosest from './components/LocationAnalyzerClosest';
-import DeviceLocation from './components/UserLocation';
-import CitySimulator from './components/CitySimulator';
+import UserLocationInfo from './components/UserLocation';
 
-import cityData from './data/cityData.json'; // Assuming you still need this
+import cityData from './data/cityData.json';
 import countyData from './data/countyData.json';
 import zipCodes from './data/zipcodes.json';
 import supData from './data/supData.json';
@@ -24,41 +23,52 @@ export default function App() {
     DeviceLocation: { visible: true, label: 'Device Location' },
   });
 
-  const [isModalVisible, setIsModalVisible] = useState(false);
-  const [isSimulatorVisible, setIsSimulatorVisible] = useState(false);
-  const [deviceLocation, setDeviceLocation] = useState([34.0522, -118.2437]); // Default to LA coordinates
+  const [deviceLocation, setDeviceLocation] = useState([-117.78, 33.89]); // Default to some coordinates
 
-  const toggleCardVisibility = (cardType) => {
-    setCardVisibility((prevState) => ({
-      ...prevState,
-      [cardType]: {
-        ...prevState[cardType],
-        visible: !prevState[cardType].visible,
-      },
-    }));
-  };
+  // Update location every second
+  useEffect(() => {
+    const updateLocation = () => {
+      navigator.geolocation.watchPosition(
+        (position) => {
+          const { longitude, latitude } = position.coords;
+          console.log(position.coords);
+          setDeviceLocation([longitude, latitude]);
+        },
+        (error) => {
+          console.error('Error fetching location:', error);
+        }
+      );
+    };
 
-  const toggleModal = () => {
-    setIsModalVisible((prev) => !prev);
-  };
+    // Call updateLocation every second
+    const locationInterval = setInterval(updateLocation, 1000);
 
-  const toggleSimulator = () => {
-    setIsSimulatorVisible((prev) => !prev);
-  };
+    // Cleanup the interval on component unmount
+    return () => clearInterval(locationInterval);
+  }, []);
 
-  const handleCitySelect = (coordinates) => {
-    setDeviceLocation(coordinates);
+  // Construct userLocationDataObj based on deviceLocation
+  const userLocationDataObj = {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: deviceLocation,
+    },
+    properties: {
+      name: 'Device',
+      description: 'This is the device location.',
+    },
   };
 
   const cardsConfig = [
-    { key: 'City', component: <LocationAnalyzer featureData={cityData.features} fields={[{ key: 'CITY', label: 'City' }]} featureType="CITY" /> },
-    { key: 'County', component: <LocationAnalyzer featureData={countyData.features} fields={[{ key: 'COUNTY_NAME', label: 'County' }]} featureType="County" /> },
-    { key: 'ZipCode', component: <LocationAnalyzer featureData={zipCodes.features} fields={[{ key: 'ZIP_CODE', label: 'Zip Code' }, { key: 'POPULATION', label: 'Population' }, { key: 'POP_SQMI', label: 'Pop. Per Sq. Mi.' }]} featureType="Zip Code" /> },
-    { key: 'Sup', component: <LocationAnalyzer featureData={supData.features} fields={[{ key: 'NAME', label: 'County Supervisor' },{ key: 'Label', label: 'Area' }]} featureType="Supervisorial District" /> },
-    { key: 'SchoolDistrict', component: <LocationAnalyzer featureData={schoolDistrictData.features} fields={[{ key: 'SCHOOL', label: 'School District' }, { key: 'S_DISTRICT', label: 'School District' }]} featureType="School District" /> },
-    { key: 'WaterDistrict', component: <LocationAnalyzer featureData={waterDistrictData.features} fields={[{ key: 'NAME', label: 'Water District' }]} featureType="Water District" /> },
-    { key: 'FireStation', component: <LocationAnalyzerClosest featureData={fireStations} keyField="Alias" featureType="Fire Station" /> },
-    { key: 'DeviceLocation', component: <DeviceLocation location={deviceLocation} /> },
+    { key: 'City', component: <LocationAnalyzer featureData={cityData.features} fields={[{ key: 'CITY', label: 'City' }]} featureType="CITY" userLocationDataObj={userLocationDataObj} /> },
+    { key: 'County', component: <LocationAnalyzer featureData={countyData.features} fields={[{ key: 'COUNTY_NAME', label: 'County' }]} featureType="County" userLocationDataObj={userLocationDataObj} /> },
+    { key: 'ZipCode', component: <LocationAnalyzer featureData={zipCodes.features} fields={[{ key: 'ZIP_CODE', label: 'Zip Code' }, { key: 'POPULATION', label: 'Population' }, { key: 'POP_SQMI', label: 'Pop. Per Sq. Mi.' }]} featureType="Zip Code" userLocationDataObj={userLocationDataObj} /> },
+    { key: 'Sup', component: <LocationAnalyzer featureData={supData.features} fields={[{ key: 'NAME', label: 'County Supervisor' }, { key: 'Label', label: 'Area' }]} featureType="Supervisorial District" userLocationDataObj={userLocationDataObj} /> },
+    { key: 'SchoolDistrict', component: <LocationAnalyzer featureData={schoolDistrictData.features} fields={[ { key: 'S_DISTRICT', label: 'School District' }]} featureType="School District" userLocationDataObj={userLocationDataObj} /> },
+    { key: 'WaterDistrict', component: <LocationAnalyzer featureData={waterDistrictData.features} fields={[{ key: 'NAME', label: 'Water District' }]} featureType="Water District" userLocationDataObj={userLocationDataObj} /> },
+    { key: 'FireStation', component: <LocationAnalyzerClosest featureData={fireStations} keyField="Alias" featureType="Fire Station" userLocationDataObj={userLocationDataObj} /> },
+    { key: 'DeviceLocation', component: <UserLocationInfo userLocationDataObj={userLocationDataObj} /> },
   ];
 
   return (
@@ -79,42 +89,12 @@ export default function App() {
               )
           )}
           <hr style={styles.divider} />
-          <button style={styles.toggleButton} onClick={toggleModal}>
-            Toggle Cards
-          </button>
-          <button style={styles.simulatorButton} onClick={toggleSimulator}>
-            City Simulator
-          </button>
         </div>
         <h4 style={styles.h4}>©2024 The Municipal Where</h4>
       </main>
 
-      {isModalVisible && (
-        <div style={styles.modalContainer}>
-          <div style={styles.modalContent}>
-            <h2 style={styles.modalTitle}>Toggle Cards</h2>
-            <div style={styles.cardTogglesContainer}>
-              {Object.keys(cardVisibility).map((cardType) => (
-                <label style={styles.checkboxLabel} key={cardType}>
-                  <input
-                    type="checkbox"
-                    checked={cardVisibility[cardType].visible}
-                    onChange={() => toggleCardVisibility(cardType)}
-                  />
-                  <span style={styles.checkboxText}>{cardVisibility[cardType].label}</span>
-                </label>
-              ))}
-            </div>
-            <button style={styles.closeButton} onClick={toggleModal}>
-              Close
-            </button>
-          </div>
-        </div>
-      )}
-
-      {isSimulatorVisible && (
-        <CitySimulator onClose={toggleSimulator} onCitySelect={handleCitySelect} />
-      )}
+      <footer style={styles.footer}>
+      </footer>
     </div>
   );
 }
@@ -184,73 +164,74 @@ const styles = {
     border: 'none',
     cursor: 'pointer',
   },
-  simulatorButton: {
-    backgroundColor: '#FF6600',
-    padding: '10px',
+  card: {
+    backgroundColor: '#FFF',
     borderRadius: '5px',
-    marginTop: '10px',
-    color: '#FAFAFA',
-    fontWeight: '500',
-    border: 'none',
-    cursor: 'pointer',
+    padding: '10px',
+    boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.1)',
+    marginBottom: '10px',
+    width: '360px',
   },
   modalContainer: {
     position: 'fixed',
-    top: '0',
-    left: '0',
-    width: '100%',
-    height: '100%',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
     display: 'flex',
-    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    zIndex: 1000,
+    justifyContent: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
   modalContent: {
-    backgroundColor: '#FFFFFF',
-    padding: '1rem',
-    borderRadius: '0.5rem',
-    width: '80%',
-    maxWidth: '400px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    zIndex: 1001,
+    backgroundColor: '#FFF',
+    borderRadius: '5px',
+    padding: '20px',
+    boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.1)',
+    width: '400px',
+    textAlign: 'center',
   },
   modalTitle: {
+    fontFamily: 'Times New Roman',
     fontSize: '1.5rem',
     fontWeight: '500',
-    marginBottom: '1rem',
-    color: '#333',
+    marginBottom: '20px',
   },
   cardTogglesContainer: {
-    width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'flex-start',
-    marginBottom: '1rem',
+    alignItems: 'center',
   },
   checkboxLabel: {
-    display: 'inline-flex',
+    display: 'flex',
     alignItems: 'center',
-    marginBottom: '0.5rem',
-    width: '100%',
+    marginBottom: '10px',
   },
   checkboxText: {
-    marginLeft: '8px',
+    fontFamily: 'Times New Roman',
     fontSize: '1rem',
-    color: '#333',
+    marginLeft: '10px',
   },
   closeButton: {
     backgroundColor: '#333',
-    padding: '0.5rem 1rem',
-    borderRadius: '0.25rem',
-    marginTop: '1rem',
+    padding: '10px',
+    borderRadius: '5px',
+    marginTop: '20px',
     color: '#FAFAFA',
     fontWeight: '500',
     border: 'none',
     cursor: 'pointer',
+  },
+  footer: {
+    marginTop: '20px',
+    backgroundColor: '#FAFAFA',
+    padding: '10px',
+    borderRadius: '5px',
+    boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.1)',
     width: '100%',
+    maxWidth: '360px',
     textAlign: 'center',
+    position: 'fixed',
+    bottom: 0,
   },
 };

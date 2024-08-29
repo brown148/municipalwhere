@@ -1,37 +1,20 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import '../CommonCardStyles.css'; // Import the CSS file
 
-const UserLocationInfo = ({ backgroundColor = '#fff' }) => {
+const UserLocationInfo = ({ userLocationDataObj, backgroundColor = '#fff' }) => {
   const [userLocation, setUserLocation] = useState(null);
 
   useEffect(() => {
-    const requestLocationPermission = async () => {
-      if (!navigator.geolocation) {
-        console.error('Geolocation is not supported by this browser.');
-        return;
-      }
+    if (userLocationDataObj) {
+      console.log('ULD:',userLocationDataObj);
+      setUserLocation(userLocationDataObj.geometry.coordinates);
+      
+    }
+  }, [userLocationDataObj]);
 
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          setUserLocation(position.coords);
-
-          navigator.geolocation.watchPosition(
-            (newLocation) => {
-              setUserLocation(newLocation.coords);
-            },
-            (error) => {
-              console.error('Error watching position:', error);
-            }
-          );
-        },
-        (error) => {
-          console.error('Error getting user location:', error);
-        }
-      );
-    };
-
-    requestLocationPermission();
-  }, []);
+console.log('ULD:',userLocationDataObj);
+console.log('TEST:', ' ', userLocation);
 
   return (
     <div className="user-location-info" style={{ backgroundColor }}>
@@ -39,7 +22,7 @@ const UserLocationInfo = ({ backgroundColor = '#fff' }) => {
         <div className="card">
           <span className="label">User Location</span>
           <span className="location">
-            {userLocation.altitude ? (userLocation.altitude * 3.28084).toFixed(0) : 'N/A'} ft. at {userLocation.latitude.toFixed(2)}°, {userLocation.longitude.toFixed(2)}°
+            Latitude: {userLocation[1].toFixed(2)}°, Longitude: {userLocation[0].toFixed(2)}°
           </span>
         </div>
       ) : (
@@ -47,6 +30,18 @@ const UserLocationInfo = ({ backgroundColor = '#fff' }) => {
       )}
     </div>
   );
+};
+
+UserLocationInfo.propTypes = {
+  userLocationDataObj: PropTypes.shape({
+    type: PropTypes.string.isRequired,
+    geometry: PropTypes.shape({
+      type: PropTypes.string.isRequired,
+      coordinates: PropTypes.arrayOf(PropTypes.number).isRequired,
+    }).isRequired,
+    properties: PropTypes.object,
+  }),
+  backgroundColor: PropTypes.string,
 };
 
 export default UserLocationInfo;

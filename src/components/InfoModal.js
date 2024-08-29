@@ -1,21 +1,48 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../InfoModal.css'; // Import the CSS file for styling
 
 const InfoModal = ({ visible, onClose, fields, insideFeature }) => {
   if (!visible) return null;
 
+  const formatValue = (value, isString) => {
+    if (isString) {
+      return value;
+    }
+    if (!isNaN(value)) {
+      return Number(value).toLocaleString();
+    }
+    return value;
+  };
+
+  const toProperCase = (input) => {
+    return input
+      .toLowerCase()
+      .split(' ')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+
   return (
-    <div style={styles.modalContainer}>
-      <div style={styles.modalContent}>
-        <h2 style={styles.modalTitle}>Information</h2>
-        <div style={styles.infoContent}>
-          {fields.map((field) => (
-            <div key={field.key} style={styles.infoItem}>
-              <strong>{field.label}:</strong> {insideFeature?.properties[field.key] || 'N/A'}
+    <div className="modal-overlay">
+      <div className="modal-content">
+        <h2 className="modal-title">{toProperCase(fields[0].label)}</h2>
+        <p className="modal-value">
+          {formatValue(insideFeature.properties[fields[0].key], true)}
+        </p>
+        <div className="table">
+          {fields.slice(1).map((field, index) => (
+            <div key={index} className="table-row">
+              <div className="table-cell-label">
+                {toProperCase(field.label)}
+              </div>
+              <div className="table-cell-value">
+                {formatValue(insideFeature.properties[field.key], false)}
+              </div>
             </div>
           ))}
         </div>
-        <button style={styles.closeButton} onClick={onClose}>Close</button>
+        <button className="close-button" onClick={onClose}>Close</button>
       </div>
     </div>
   );
@@ -26,57 +53,6 @@ InfoModal.propTypes = {
   onClose: PropTypes.func.isRequired,
   fields: PropTypes.array.isRequired,
   insideFeature: PropTypes.object,
-};
-
-const styles = {
-  modalContainer: {
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    zIndex: 1000,
-  },
-  modalContent: {
-    backgroundColor: '#FFFFFF',
-    padding: '1rem',
-    borderRadius: '0.5rem',
-    width: '80%',
-    maxWidth: '400px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    zIndex: 1001,
-  },
-  modalTitle: {
-    fontSize: '1.5rem',
-    fontWeight: '500',
-    marginBottom: '1rem',
-    color: '#333',
-  },
-  infoContent: {
-    width: '100%',
-  },
-  infoItem: {
-    marginBottom: '0.5rem',
-  },
-  closeButton: {
-    backgroundColor: '#333',
-    padding: '0.5rem 1rem',
-    borderRadius: '0.25rem',
-    marginTop: '1rem',
-    color: '#FAFAFA',
-    fontWeight: '500',
-    border: 'none',
-    cursor: 'pointer',
-    width: '100%',
-    textAlign: 'center',
-    zIndex: 1002,
-  },
 };
 
 export default InfoModal;

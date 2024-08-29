@@ -1,65 +1,44 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { booleanPointInPolygon } from '@turf/turf';
 import InfoModal from './InfoModal';
-import '../CommonCardStyles.css'; // Import the CSS file
+import '../CommonCardStyles.css';
 
-export default function LocationAnalyzer({ featureData, fields = [], featureType }) {
+export default function LocationAnalyzer({ featureData, fields = [], featureType, userLocationDataObj }) {
   const [insideFeature, setInsideFeature] = useState(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [isRefreshing, setIsRefreshing] = useState(false); // New state for refresh indicator
-  const featureDataRef = useRef(featureData);
 
-  const fetchUserLocation = () => {
-    console.log('Checking user location...'); // Log when fetching starts
-    setIsRefreshing(true); // Set refresh state to true
+  useEffect(() => {
+    const analyzeUserLocation = () => {
+      console.log('Checking user location...'); // Log when fetching starts
 
-    if (!navigator.geolocation) {
-      console.error('Geolocation is not supported by this browser');
-      setIsRefreshing(false); // Reset refresh state if geolocation is not supported
-      return;
-    }
-
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const { longitude, latitude } = position.coords;
-
-        const userLocationDataObj = {
-          type: 'Feature',
-          geometry: {
-            type: 'Point',
-            coordinates: [longitude, latitude],
-          },
-          properties: {
-            name: 'Device',
-            description: 'This is the device location.',
-          },
-        };
-
-        // Check if the user is inside any of the features
-        const featureInside = featureDataRef.current.find((feature) =>
-          booleanPointInPolygon(userLocationDataObj, feature)
-        );
-
-        setInsideFeature(featureInside || null);
-        console.log('Location update:', featureInside ? 'Inside feature' : 'Not inside any feature'); // Log location update
-        setIsRefreshing(false); // Reset refresh state after checking
-      },
-      (error) => {
-        console.error('Error getting user location:', error);
-        setIsRefreshing(false); // Reset refresh state if there is an error
+      for (const feature of featureData) {
+        const isInside = booleanPointInPolygon(userLocationDataObj, feature);
+        if (isInside) {
+          setInsideFeature(feature);
+          console.log('Location update: Inside feature', feature); // Log location update
+          return;
+        }
       }
-    );
+
+      setInsideFeature(null);
+      console.log('Location update: Not inside any feature'); // Log when not inside any feature
+    };
+
+    analyzeUserLocation();
+  }, [userLocationDataObj, featureData]);
+
+  const handleCloseModal = () => {
+    console.log('Modal close requested');
+    setIsModalVisible((prev) => {
+      console.log('Previous state:', prev);
+      return false;
+    });
   };
 
   useEffect(() => {
-    fetchUserLocation(); // Initial fetch
-    const intervalId = setInterval(fetchUserLocation, 5000); // Check every 5 seconds
-
-    return () => {
-      clearInterval(intervalId); // Cleanup interval on unmount
-    };
-  }, [featureData]);
+    console.log('Modal visibility changed:', isModalVisible);
+  }, [isModalVisible]);
 
   const formatValue = (value, isString) => {
     if (isString) {
@@ -86,12 +65,10 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
             User Device is not inside any {featureType}.
           </p>
         )}
-        {/* Subtle dot for refresh indicator */}
-        <div className={`refresh-indicator ${isRefreshing ? 'active' : ''}`}></div>
       </div>
       <InfoModal
         visible={isModalVisible}
-        onClose={() => setIsModalVisible(false)}
+        onClose={handleCloseModal}
         fields={fields}
         insideFeature={insideFeature}
       />
@@ -108,4 +85,5 @@ LocationAnalyzer.propTypes = {
     })
   ),
   featureType: PropTypes.string.isRequired,
+  userLocationDataObj: PropTypes.object.isRequired,
 };

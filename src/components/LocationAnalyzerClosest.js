@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import * as turf from '@turf/turf';
 import '../CommonCardStyles.css'; // Import the CSS file
 
-export default function LocationAnalyzerClosest({ featureData, keyField, featureType }) {
+export default function LocationAnalyzerClosest({ featureData, keyField, featureType, userLocationDataObj }) {
   const [nearestPoint, setNearestPoint] = useState(null);
   const [bearing, setBearing] = useState(null);
   const [distance, setDistance] = useState(null);
@@ -11,37 +11,24 @@ export default function LocationAnalyzerClosest({ featureData, keyField, feature
 
   useEffect(() => {
     const calculateNearestLocation = () => {
-      if (!navigator.geolocation) {
-        console.error('Geolocation is not supported by this browser.');
+      if (!userLocationDataObj || !userLocationDataObj.geometry || userLocationDataObj.geometry.coordinates.length !== 2) {
+        console.error('Invalid user location data.');
         return;
       }
 
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { longitude, latitude } = position.coords;
-          const referencePoint = turf.point([longitude, latitude]);
-          const closestPoint = turf.nearestPoint(referencePoint, featureDataRef.current);
-          const newBearing = turf.bearing(referencePoint, closestPoint);
-          const newCardinalDirection = calculateCardinalDirection(newBearing);
-          const newDistance = (closestPoint.properties.distanceToPoint.toFixed(2) * 0.621371).toFixed(2);
+      const referencePoint = turf.point(userLocationDataObj.geometry.coordinates);
+      const closestPoint = turf.nearestPoint(referencePoint, featureDataRef.current);
+      const newBearing = turf.bearing(referencePoint, closestPoint);
+      const newCardinalDirection = calculateCardinalDirection(newBearing);
+      const newDistance = (closestPoint.properties.distanceToPoint.toFixed(2) * 0.621371).toFixed(2);
 
-          setNearestPoint(closestPoint);
-          setBearing(newCardinalDirection);
-          setDistance(newDistance);
-        },
-        (error) => {
-          console.error('Error getting user location:', error);
-        }
-      );
+      setNearestPoint(closestPoint);
+      setBearing(newCardinalDirection);
+      setDistance(newDistance);
     };
 
     calculateNearestLocation();
-    const intervalId = setInterval(calculateNearestLocation, 2000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, [featureData]);
+  }, [userLocationDataObj, featureData]);
 
   const calculateCardinalDirection = (bearing) => {
     const cardinalDirections = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
@@ -53,7 +40,7 @@ export default function LocationAnalyzerClosest({ featureData, keyField, feature
   return (
     <div className="card">
       {nearestPoint ? (
-        <div >
+        <div>
           <span className="label">Nearest {featureType}</span>
           <span className="value">{nearestPoint.properties[keyField]}</span>
           <span className="distance">{distance} mi {bearing}</span>
@@ -69,4 +56,5 @@ LocationAnalyzerClosest.propTypes = {
   featureData: PropTypes.array.isRequired,
   keyField: PropTypes.string.isRequired,
   featureType: PropTypes.string.isRequired,
+  userLocationDataObj: PropTypes.object.isRequired, // Expecting userLocationDataObj with geometry.coordinates
 };

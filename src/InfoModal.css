@@ -1,77 +1,75 @@
-/* InfoModal.css */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4); /* Slightly more transparent background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Ensure the overlay is above other content */
-  }
-  
-  .modal-content {
-    background-color: #ffffff; /* White background */
-    padding: 1rem; /* Reduced padding for a smaller modal */
-    border-radius: 0.5rem; /* Consistent border radius */
-    width: 80vw; /* Slightly smaller width */
-    max-width: 25rem; /* Reduced maximum width */
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for a subtle effect */
-    z-index: 1001; /* Ensure the content is on top of the overlay */
-  }
-  
-  .modal-title {
-    font-family: 'Times New Roman', serif; /* Consistent font family */
-    font-size: 1.25rem; /* Adjusted font size */
-    color: #333333; /* Dark grey text */
-    margin-bottom: 0.75rem; /* Reduced margin */
-  }
-  
-  .modal-value {
-    font-family: 'Times New Roman', serif;
-    font-size: 1.25rem; /* Consistent font size */
-    color: #333333; /* Dark grey text */
-    margin-bottom: 1rem; /* Adjusted margin */
-  }
-  
-  .table {
-    width: 100%;
-    margin: 1rem 0; /* Consistent margin */
-  }
-  
-  .table-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 0; /* Consistent padding */
-  }
-  
-  .table-cell-label,
-  .table-cell-value {
-    font-family: 'Times New Roman', serif;
-    font-size: 1rem; /* Standard font size */
-    color: #333333; /* Dark grey text */
-    flex: 1;
-  }
-  
-  .table-cell-value {
-    text-align: right; /* Align value to the right */
-  }
-  
-  .close-button {
-    padding: 0.5rem 1rem; /* Consistent padding */
-    font-size: 1rem; /* Font size to match other buttons */
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333333; /* Dark grey text */
-    border: 1px solid #d0d0d0; /* Border to match other buttons */
-    border-radius: 0.25rem; /* Consistent border radius */
-    cursor: pointer;
-    z-index: 1001; /* Ensure the close button is on top of the modal content */
-  }
-  
-  .close-button:hover {
-    background-color: #e0e0e0; /* Slightly darker grey for hover effect */
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* Slightly more transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the overlay is above other content */
+}
+
+.modal-content {
+  background-color: #ffffff; /* White background */
+  padding: 1rem; /* Reduced padding for a smaller modal */
+  border-radius: 0.5rem; /* Consistent border radius */
+  width: 80vw; /* Slightly smaller width */
+  max-width: 25rem; /* Reduced maximum width */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for a subtle effect */
+  z-index: 1001; /* Ensure the content is on top of the overlay */
+}
+
+.modal-title {
+  font-family: 'Times New Roman', serif; /* Consistent font family */
+  font-size: 1.25rem; /* Adjusted font size */
+  color: #333333; /* Dark grey text */
+  margin-bottom: 0.75rem; /* Reduced margin */
+}
+
+.modal-value {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.25rem; /* Consistent font size */
+  color: #333333; /* Dark grey text */
+  margin-bottom: 1rem; /* Adjusted margin */
+}
+
+.table {
+  width: 100%;
+  margin: 1rem 0; /* Consistent margin */
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0; /* Consistent padding */
+}
+
+.table-cell-label,
+.table-cell-value {
+  font-family: 'Times New Roman', serif;
+  font-size: 1rem; /* Standard font size */
+  color: #333333; /* Dark grey text */
+  flex: 1;
+}
+
+.table-cell-value {
+  text-align: right; /* Align value to the right */
+}
+
+.close-button {
+  padding: 0.5rem 1rem; /* Consistent padding */
+  font-size: 1rem; /* Font size to match other buttons */
+  background-color: #f0f0f0; /* Light grey background */
+  color: #333333; /* Dark grey text */
+  border: 1px solid #d0d0d0; /* Border to match other buttons */
+  border-radius: 0.25rem; /* Consistent border radius */
+  cursor: pointer;
+  z-index: 1002; /* Ensure the close button is on top of the modal content */
+}
+
+.close-button:hover {
+  background-color: #e0e0e0; /* Slightly darker grey for hover effect */
+}
