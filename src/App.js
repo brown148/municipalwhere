@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
 import LocationAnalyzer from './components/LocationAnalyzer';
 import LocationAnalyzerClosest from './components/LocationAnalyzerClosest';
 import UserLocationInfo from './components/UserLocation';
+import './InfoModal.css'; // Import the CSS file
 
 import cityData from './data/cityData.json';
 import countyData from './data/countyData.json';
@@ -24,6 +26,7 @@ export default function App() {
   });
 
   const [deviceLocation, setDeviceLocation] = useState([-117.78, 33.89]); // Default to some coordinates
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Update location every second
   useEffect(() => {
@@ -71,6 +74,13 @@ export default function App() {
     { key: 'DeviceLocation', component: <UserLocationInfo userLocationDataObj={userLocationDataObj} /> },
   ];
 
+  const handleCardVisibilityChange = (key) => {
+    setCardVisibility(prevState => ({
+      ...prevState,
+      [key]: { ...prevState[key], visible: !prevState[key].visible }
+    }));
+  };
+
   return (
     <div style={styles.container}>
       <header style={styles.header}>
@@ -94,7 +104,49 @@ export default function App() {
       </main>
 
       <footer style={styles.footer}>
+        <button
+          style={styles.toggleButton}
+          onClick={() => setIsModalOpen(true)}
+        >
+          Toggle Card Visibility
+        </button>
       </footer>
+
+      <Transition appear show={isModalOpen} as={Fragment}>
+        <Dialog as="div" className="modal-overlay" open={isModalOpen} onClose={() => setIsModalOpen(false)}>
+          <div className="modal-content" className="fixed inset-0 bg-black/30" aria-hidden="true" />
+          <div className="fixed inset-0 flex items-center justify-center p-4">
+            <Dialog.Panel style={styles.modalContent}>
+              <Dialog.Title as="h3" style={styles.modalTitle}>
+                Card Visibility Settings
+              </Dialog.Title>
+              <div className="mt-4">
+                {Object.keys(cardVisibility).map((key) => (
+                  <div className="flex items-center mb-2" key={key}>
+                    <input
+                      type="checkbox"
+                      id={`toggle-${key}`}
+                      checked={cardVisibility[key].visible}
+                      onChange={() => handleCardVisibilityChange(key)}
+                      style={{ marginRight: '10px' }}
+                    />
+                    <label htmlFor={`toggle-${key}`}>{cardVisibility[key].label}</label>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-6 flex justify-end">
+                <button
+                  type="button"
+                  style={styles.closeButton}
+                  onClick={() => setIsModalOpen(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </Dialog.Panel>
+          </div>
+        </Dialog>
+      </Transition>
     </div>
   );
 }
@@ -172,16 +224,17 @@ const styles = {
     marginBottom: '10px',
     width: '360px',
   },
-  modalContainer: {
+  footer: {
+    marginTop: '20px',
+    backgroundColor: '#FAFAFA',
+    padding: '10px',
+    borderRadius: '5px',
+    boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.1)',
+    width: '100%',
+    maxWidth: '360px',
+    textAlign: 'center',
     position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
     bottom: 0,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
   modalContent: {
     backgroundColor: '#FFF',
@@ -197,41 +250,13 @@ const styles = {
     fontWeight: '500',
     marginBottom: '20px',
   },
-  cardTogglesContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  checkboxLabel: {
-    display: 'flex',
-    alignItems: 'center',
-    marginBottom: '10px',
-  },
-  checkboxText: {
-    fontFamily: 'Times New Roman',
-    fontSize: '1rem',
-    marginLeft: '10px',
-  },
   closeButton: {
     backgroundColor: '#333',
     padding: '10px',
     borderRadius: '5px',
-    marginTop: '20px',
     color: '#FAFAFA',
     fontWeight: '500',
     border: 'none',
     cursor: 'pointer',
-  },
-  footer: {
-    marginTop: '20px',
-    backgroundColor: '#FAFAFA',
-    padding: '10px',
-    borderRadius: '5px',
-    boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.1)',
-    width: '100%',
-    maxWidth: '360px',
-    textAlign: 'center',
-    position: 'fixed',
-    bottom: 0,
   },
 };

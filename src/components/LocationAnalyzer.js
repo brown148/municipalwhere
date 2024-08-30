@@ -7,6 +7,16 @@ import '../CommonCardStyles.css';
 export default function LocationAnalyzer({ featureData, fields = [], featureType, userLocationDataObj }) {
   const [insideFeature, setInsideFeature] = useState(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [backgroundColor, setBackgroundColor] = useState(''); // State for background color
+  const [originalBackgroundColor, setOriginalBackgroundColor] = useState(''); // State for the original background color
+
+  useEffect(() => {
+    // Save the original background color when component mounts
+    const cardElement = document.querySelector('.card');
+    if (cardElement) {
+      setOriginalBackgroundColor(getComputedStyle(cardElement).backgroundColor);
+    }
+  }, []);
 
   useEffect(() => {
     const analyzeUserLocation = () => {
@@ -27,6 +37,24 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
 
     analyzeUserLocation();
   }, [userLocationDataObj, featureData]);
+
+  // Effect to handle background color change when insideFeature changes
+  useEffect(() => {
+    if (insideFeature) {
+      // Change background color to lighter green with transparency immediately
+      setBackgroundColor('rgba(0, 255, 0, 0.1)'); // Lighter green with 20% opacity
+
+      // Fade background color back to original after 10 seconds
+      const timer = setTimeout(() => {
+        setBackgroundColor(originalBackgroundColor);
+      }, 10000); // 10 seconds
+
+      return () => clearTimeout(timer); // Cleanup timer on unmount or insideFeature change
+    } else {
+      // Ensure background color fades back to original even when insideFeature is null
+      setBackgroundColor(originalBackgroundColor);
+    }
+  }, [insideFeature, originalBackgroundColor]);
 
   const handleCloseModal = () => {
     console.log('Modal close requested');
@@ -51,7 +79,11 @@ export default function LocationAnalyzer({ featureData, fields = [], featureType
   };
 
   return (
-    <div className="card" onClick={() => setIsModalVisible(true)}>
+    <div 
+      className="card" 
+      onClick={() => setIsModalVisible(true)}
+      style={{ backgroundColor }} // Apply the background color with immediate change and fade
+    >
       <div className="card-content">
         {insideFeature ? (
           <div>
