@@ -39,11 +39,12 @@
 .table {
   width: 100%;
   margin: 1rem 0; /* Consistent margin */
+
 }
 
 .table-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0; /* Consistent padding */
 }
 
@@ -56,7 +57,7 @@
 }
 
 .table-cell-value {
-  text-align: right; /* Align value to the right */
+  text-align: left; /* Align value to the right */
 }
 
 .close-button {

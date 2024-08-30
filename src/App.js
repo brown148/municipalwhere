@@ -67,7 +67,7 @@ export default function App() {
     { key: 'Sup', component: <LocationAnalyzer featureData={supData.features} fields={[{ key: 'NAME', label: 'County Supervisor' }, { key: 'Label', label: 'Area' }]} featureType="Supervisorial District" userLocationDataObj={userLocationDataObj} /> },
     { key: 'SchoolDistrict', component: <LocationAnalyzer featureData={schoolDistrictData.features} fields={[ { key: 'S_DISTRICT', label: 'School District' }]} featureType="School District" userLocationDataObj={userLocationDataObj} /> },
     { key: 'WaterDistrict', component: <LocationAnalyzer featureData={waterDistrictData.features} fields={[{ key: 'NAME', label: 'Water District' }]} featureType="Water District" userLocationDataObj={userLocationDataObj} /> },
-    { key: 'FireStation', component: <LocationAnalyzerClosest featureData={fireStations} keyField="Alias" featureType="Fire Station" userLocationDataObj={userLocationDataObj} /> },
+    { key: 'FireStation', component: <LocationAnalyzerClosest featureData={fireStations} keyField="Alias" featureType="Fire Station" userLocationDataObj={userLocationDataObj} fields={[{ key: 'SiteAddress', label: 'Address' },{ key: 'City', label: 'City' },{ key: 'Agency', label: 'Agency' },{ key: 'StationNumber', label: 'StationNumber' }]} /> },
     { key: 'DeviceLocation', component: <UserLocationInfo userLocationDataObj={userLocationDataObj} /> },
   ];
 
