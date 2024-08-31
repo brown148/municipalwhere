@@ -22,7 +22,7 @@ console.log('TEST:', ' ', userLocation);
         <div className="card">
           <span className="label">User Location</span>
           <span className="location">
-            Latitude: {userLocation[1].toFixed(2)}°, Longitude: {userLocation[0].toFixed(2)}°
+            {userLocation[1].toFixed(5)}°, {userLocation[0].toFixed(5)}°
           </span>
         </div>
       ) : (

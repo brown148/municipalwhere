@@ -12,21 +12,39 @@ export default function LocationAnalyzerClosest({ featureData, keyField, feature
   const featureDataRef = useRef(featureData);
 
   useEffect(() => {
+    console.log('User location data:', userLocationDataObj);
+    console.log('Feature data:', featureData);
+
     const calculateNearestLocation = () => {
       if (!userLocationDataObj || !userLocationDataObj.geometry || userLocationDataObj.geometry.coordinates.length !== 2) {
-        console.error('Invalid user location data.');
+        console.error('Invalid user location data:', userLocationDataObj);
+        console.error('Invalid user location data. Ensure that the coordinates are correct.');
         return;
       }
 
-      const referencePoint = turf.point(userLocationDataObj.geometry.coordinates);
-      const closestPoint = turf.nearestPoint(referencePoint, featureDataRef.current);
-      const newBearing = turf.bearing(referencePoint, closestPoint);
-      const newCardinalDirection = calculateCardinalDirection(newBearing);
-      const newDistance = (closestPoint.properties.distanceToPoint.toFixed(2) * 0.621371).toFixed(2);
+      try {
+        const referencePoint = turf.point(userLocationDataObj.geometry.coordinates);
+        console.log('Reference point for calculation:', referencePoint);
+        console.log(featureDataRef.current);
 
-      setNearestPoint(closestPoint);
-      setBearing(newCardinalDirection);
-      setDistance(newDistance);
+        const closestPoint = turf.nearestPoint(referencePoint, featureDataRef.current);
+        console.log('Calculated nearest point:', closestPoint);
+
+        const newBearing = turf.bearing(referencePoint, closestPoint);
+        console.log('Calculated bearing:', newBearing);
+
+        const newCardinalDirection = calculateCardinalDirection(newBearing);
+        console.log('Calculated cardinal direction:', newCardinalDirection);
+
+        const newDistance = (closestPoint.properties.distanceToPoint.toFixed(2) * 0.621371).toFixed(2);
+        console.log('Calculated distance (in miles):', newDistance);
+
+        setNearestPoint(closestPoint);
+        setBearing(newCardinalDirection);
+        setDistance(newDistance);
+      } catch (error) {
+        console.error('Error during nearest location calculation:', error);
+      }
     };
 
     calculateNearestLocation();
@@ -40,10 +58,12 @@ export default function LocationAnalyzerClosest({ featureData, keyField, feature
   };
 
   const handleOpenModal = () => {
+    console.log('Opening modal...');
     setIsModalOpen(true); // Open the modal
   };
 
   const handleCloseModal = () => {
+    console.log('Closing modal...');
     setIsModalOpen(false); // Close the modal
   };
 

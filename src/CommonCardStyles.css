@@ -6,7 +6,7 @@
   border: 1px solid #D0D0D0;
   border-radius: 4px;
   background-color: #FFFFFF;
-  padding: 10px; /* Adjusted padding */
+  padding: 5px; /* Adjusted padding */
   position: relative;
   margin: 5px 0;
   box-sizing: border-box; /* Include padding and border in element's total width and height */
@@ -49,6 +49,7 @@
   top: 10px;
   right: 15px;
 }
+
 
 .refresh-indicator {
   position: absolute;
