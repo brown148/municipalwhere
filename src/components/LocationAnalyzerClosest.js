@@ -1,45 +1,63 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import * as turf from '@turf/turf';
-import '../CommonCardStyles.css'; // Import the CSS file
-import InfoModal from './InfoModal'; // Import the InfoModal component
+import '../CommonCardStyles.css';
+import InfoModal from './InfoModal';
 
 export default function LocationAnalyzerClosest({ featureData, keyField, featureType, userLocationDataObj, fields }) {
   const [nearestPoint, setNearestPoint] = useState(null);
   const [bearing, setBearing] = useState(null);
   const [distance, setDistance] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const featureDataRef = useRef(featureData);
 
   useEffect(() => {
-    console.log('User location data:', userLocationDataObj);
-    console.log('Feature data:', featureData);
+    const extractFeatures = (data) => {
+      if (!data) return [];
+      if (Array.isArray(data)) return data;
+      if (data.type === 'FeatureCollection') return data.features || [];
+      return [];
+    };
 
     const calculateNearestLocation = () => {
-      if (!userLocationDataObj || !userLocationDataObj.geometry || userLocationDataObj.geometry.coordinates.length !== 2) {
+      if (
+        !userLocationDataObj ||
+        !userLocationDataObj.geometry ||
+        !Array.isArray(userLocationDataObj.geometry.coordinates) ||
+        userLocationDataObj.geometry.coordinates.length !== 2
+      ) {
         console.error('Invalid user location data:', userLocationDataObj);
-        console.error('Invalid user location data. Ensure that the coordinates are correct.');
         return;
       }
 
       try {
         const referencePoint = turf.point(userLocationDataObj.geometry.coordinates);
-        console.log('Reference point for calculation:', referencePoint);
-        console.log(featureDataRef.current);
+        const rawFeatures = extractFeatures(featureDataRef.current);
 
-        const closestPoint = turf.nearestPoint(referencePoint, featureDataRef.current);
-        console.log('Calculated nearest point:', closestPoint);
+        const validFeatures = rawFeatures.filter(
+          (f) =>
+            f &&
+            f.geometry &&
+            f.geometry.type === 'Point' &&
+            Array.isArray(f.geometry.coordinates) &&
+            f.geometry.coordinates.length === 2 &&
+            typeof f.geometry.coordinates[0] === 'number' &&
+            typeof f.geometry.coordinates[1] === 'number'
+        );
 
-        const newBearing = turf.bearing(referencePoint, closestPoint);
-        console.log('Calculated bearing:', newBearing);
+        if (validFeatures.length === 0) {
+          console.warn('No valid Point features found in featureData');
+          return;
+        }
 
+        const featureCollection = turf.featureCollection(validFeatures);
+        const closest = turf.nearestPoint(referencePoint, featureCollection);
+
+        const newBearing = turf.bearing(referencePoint, closest);
         const newCardinalDirection = calculateCardinalDirection(newBearing);
-        console.log('Calculated cardinal direction:', newCardinalDirection);
+        const newDistance = (closest.properties.distanceToPoint.toFixed(2) * 0.621371).toFixed(2); // km to mi
 
-        const newDistance = (closestPoint.properties.distanceToPoint.toFixed(2) * 0.621371).toFixed(2);
-        console.log('Calculated distance (in miles):', newDistance);
-
-        setNearestPoint(closestPoint);
+        setNearestPoint(closest);
         setBearing(newCardinalDirection);
         setDistance(newDistance);
       } catch (error) {
@@ -53,18 +71,16 @@ export default function LocationAnalyzerClosest({ featureData, keyField, feature
   const calculateCardinalDirection = (bearing) => {
     const cardinalDirections = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
     const bearingDegrees = (bearing + 360) % 360;
-    const index = Math.floor((bearingDegrees + 22.5) / 45);
+    const index = Math.floor((bearingDegrees + 22.5) / 45) % 8;
     return cardinalDirections[index];
   };
 
   const handleOpenModal = () => {
-    console.log('Opening modal...');
-    setIsModalOpen(true); // Open the modal
+    setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
-    console.log('Closing modal...');
-    setIsModalOpen(false); // Close the modal
+    setIsModalOpen(false);
   };
 
   return (
@@ -78,12 +94,12 @@ export default function LocationAnalyzerClosest({ featureData, keyField, feature
       ) : (
         <p className="label">Loading nearest {featureType}...</p>
       )}
-      
+
       {nearestPoint && (
-        <InfoModal 
-          visible={isModalOpen} 
+        <InfoModal
+          visible={isModalOpen}
           onClose={handleCloseModal}
-          fields={fields} // Pass the fields prop to the InfoModal
+          fields={fields}
           insideFeature={nearestPoint}
         />
       )}
@@ -92,9 +108,12 @@ export default function LocationAnalyzerClosest({ featureData, keyField, feature
 }
 
 LocationAnalyzerClosest.propTypes = {
-  featureData: PropTypes.array.isRequired,
+  featureData: PropTypes.oneOfType([
+    PropTypes.array, // Array of Features
+    PropTypes.object // Full FeatureCollection
+  ]).isRequired,
   keyField: PropTypes.string.isRequired,
   featureType: PropTypes.string.isRequired,
-  userLocationDataObj: PropTypes.object.isRequired, // Expecting userLocationDataObj with geometry.coordinates
-  fields: PropTypes.array.isRequired, // Expecting an array of field objects
+  userLocationDataObj: PropTypes.object.isRequired,
+  fields: PropTypes.array.isRequired,
 };
