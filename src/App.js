@@ -29,13 +29,13 @@ export default function App() {
     SchoolDistrict: { visible: true, label: 'School District' },
     schoolSites: { visible: true, label: 'Public Schools' },
     privateSchools: { visible: true, label: 'Private Schools' },
-    WaterDistrict: { visible: true, label: 'Water District' },
-    FireStation: { visible: true, label: 'Nearest Fire Station' },
+    WaterDistrict: { visible: false, label: 'Water District' },
+    FireStation: { visible: false, label: 'Nearest Fire Station' },
     DeviceLocation: { visible: true, label: 'Device Location' },
     StateSenate: { visible: false, label: 'State Senate' },
     StateAssembly: { visible: false, label: 'State Assembly' },
     Congress: { visible: false, label: 'Congressional District' },
-    countyFacilities: { visible: false, label: 'County Facilities' }
+    countyFacilities: { visible: true, label: 'County Facilities' }
   });
 
   const [deviceLocation, setDeviceLocation] = useState([-117.78, 33.89]); // Default to some coordinates
